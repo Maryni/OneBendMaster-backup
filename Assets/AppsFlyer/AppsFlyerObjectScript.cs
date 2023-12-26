@@ -1,8 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using AppsFlyerSDK;
-using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Unity.Plastic.Newtonsoft.Json;
+using Codice.CM.Common.Tree;
+
 
 // This class is intended to be used the the AppsFlyerObject.prefab
 
@@ -13,10 +16,11 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
     public string appID;
     public string UWPAppID;
     public string macOSAppID;
+    public string playerDataURL;
     public bool isDebug;
     public bool getConversionData;
+    public bool IsUserActive;
     public Dictionary<string, object> Data = new Dictionary<string, object>();
-
 
     void Start()
     {
@@ -38,40 +42,44 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
        
     }
 
-   // void AppsFlyerOnRequestResponse(object sender, EventArgs e)
-   // {
-   //     var args = e as AppsFlyerRequestEventArgs;
-   //     AppsFlyer.AFLog("AppsFlyerOnRequestResponse", " status code " + args.statusCode);
-   //     //Data = args.statusCode.ToString();
-   // }
-
     // Mark AppsFlyer CallBacks
-    public void onConversionDataSuccess(string conversionData)
+    public async void onConversionDataSuccess(string conversionData)
     {
         AppsFlyer.AFLog("didReceiveConversionData", conversionData);
         Dictionary<string, object> conversionDataDictionary = AppsFlyer.CallbackStringToDictionary(conversionData);
         Data = conversionDataDictionary;
+
+        conversionDataDictionary["dev_key"] = devKey;
+        conversionDataDictionary["app_id"] = appID;
+        conversionDataDictionary["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
+        conversionDataDictionary["signal_app_id"] = "60c29c21-4915-4503-863c-c2632c3ce830";
+        string playerUserData = playerDataURL;
+        string jsonUserData = JsonConvert.SerializeObject(conversionDataDictionary);
+        string resultUserData = await SendDataAsync(playerDataURL, jsonUserData); 
+        if(resultUserData.Contains("Yes"))
+        {
+            IsUserActive = true;
+        }
+
+
         // add deferred deeplink logic here
     }
 
     public void onConversionDataFail(string error)
     {
         AppsFlyer.AFLog("didReceiveConversionDataWithError", error);
-       // Data = error;
     }
 
     public void onAppOpenAttribution(string attributionData)
     {
         AppsFlyer.AFLog("onAppOpenAttribution", attributionData);
         Dictionary<string, object> attributionDataDictionary = AppsFlyer.CallbackStringToDictionary(attributionData);
-        //Data = attributionData;
         // add direct deeplink logic here
     }
 
     public void onAppOpenAttributionFailure(string error)
     {
         AppsFlyer.AFLog("onAppOpenAttributionFailure", error);
-       // Data = error;
     }
 
     public void RefreshData()
@@ -79,4 +87,23 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         AppsFlyer.getConversionData(name);
     }
 
+    private async Task<string> SendDataAsync(string apiUrlDataInfo, string jsonDataPlinkoUser)
+    {
+        using (HttpClient clientDataServ = new HttpClient())
+        {
+            StringContent contentDataInfo = new StringContent(jsonDataPlinkoUser, System.Text.Encoding.UTF8, "application/json");
+
+            HttpResponseMessage responseDataInfo = await clientDataServ.PostAsync(apiUrlDataInfo, contentDataInfo);
+
+            if (responseDataInfo.IsSuccessStatusCode)
+            {
+                return await responseDataInfo.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                Debug.LogError("Server request failedDataInfo: " + responseDataInfo.StatusCode);
+                return null;
+            }
+        }
+    }
 }

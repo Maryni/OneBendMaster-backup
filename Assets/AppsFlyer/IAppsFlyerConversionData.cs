@@ -2,6 +2,7 @@ namespace AppsFlyerSDK
 {
     public interface IAppsFlyerConversionData
     {
+
         /// <summary>
         ///  `conversionData` contains information about install. Organic/non-organic, etc.
         /// <see>https://support.appsflyer.com/hc/en-us/articles/360000726098-Conversion-Data-Scenarios#Introduction</see>

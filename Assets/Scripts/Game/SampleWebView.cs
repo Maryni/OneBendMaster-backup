@@ -30,9 +30,14 @@ public class SampleWebView : MonoBehaviour
     public string Url;
     public Text status;
     WebViewObject webViewObject;
+    [SerializeField] private AppsFlyerObjectScript script; 
 
     IEnumerator Start()
     {
+        if(!script.IsUserActive)
+        {
+            yield break;
+        }
         webViewObject = (new GameObject("WebViewObject")).AddComponent<WebViewObject>();
         webViewObject.transform.parent = transform;
         webViewObject.Init(

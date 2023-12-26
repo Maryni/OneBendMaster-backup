@@ -162,8 +162,6 @@ public class MatchThreeController_v2 : MonoBehaviour
 
     #region private functions
 
-    //https://perrfectsttarrttup.shop?onebendmaster-tech
-
     private bool CheckCombinationForElement(int x, int y)
     {
         Debug.Log($"Checking [{x}|{y}], elementType = {arrayObjectsInCell[x,y].ElementType}");
