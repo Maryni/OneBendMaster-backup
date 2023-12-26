@@ -58,17 +58,19 @@ public class MatchThreeController_v2 : MonoBehaviour
     public void CheckSlideConnectionBetweenOnBeginDragAndOnEndDrag()
     {
         Debug.Log($"xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
-        if ((xFirst != 0 && xFirst != -1) && (yFirst != 0 && ySecond != -1))
+        if ((xFirst != -1 && yFirst != -1) && (xSecond != -1 && ySecond != -1))
         {
-
-            SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst);
+            //Debug.Log($"[2] xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
+            SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, true);
+            ChangeElementsInArray();
+            //Debug.Log($"[3] xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
 
             if (CheckCombinationForElement(xSecond, ySecond))
             {
-                //SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, false);
-                //SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, true);
-                ChangeElementsInArray();
-
+                //SwapValues(xSecond, ySecond, xFirst, yFirst);
+                //SwapValues(ref xFirst,ref yFirst,ref xSecond, ref ySecond, true);
+                //ChangeElementsInArray();
+                return;
                 //countConnectedCells++;
                 //xSecond = xFirst;
                 //ySecond = yFirst;
@@ -76,7 +78,9 @@ public class MatchThreeController_v2 : MonoBehaviour
             }
             else
             {
-                SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, false);
+                SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, true);
+                ChangeElementsInArray();
+                Debug.Log("FALSE check combinations");
             }
         }
 
@@ -95,10 +99,12 @@ public class MatchThreeController_v2 : MonoBehaviour
 
         if(needToResetXY)
         {
-            arrayObjectsInCell[x1, y1].SetX(arrayObjectsInCell[x2, y2].X);
-            arrayObjectsInCell[x1, y1].SetY(arrayObjectsInCell[x2, y2].Y);
+            xTemp = arrayObjectsInCell[x2, y2].X;
+            yTemp = arrayObjectsInCell[x2, y2].Y;
             arrayObjectsInCell[x2, y2].SetX(arrayObjectsInCell[x1, y1].X);
             arrayObjectsInCell[x2, y2].SetY(arrayObjectsInCell[x1, y1].Y);
+            arrayObjectsInCell[x1, y1].SetX(xTemp);
+            arrayObjectsInCell[x1, y1].SetY(yTemp);
         }
     }
 
@@ -153,54 +159,14 @@ public class MatchThreeController_v2 : MonoBehaviour
     }
 
     #endregion public functions
-    
+
     #region private functions
 
-    // private bool CheckConnectionBetweenPoints(int x1, int y1, int x2, int y2)
-    // {
-    //     if (x1 + 1 == x2)
-    //     {
-    //         if (y1 == y2)
-    //         {
-    //             return true;
-    //         }
-    //         else
-    //         {
-    //             return false;
-    //         }
-    //     }
-    //
-    //     if (x1 == x2)
-    //     {
-    //         if (y1 + 1 == y2)
-    //         {
-    //             return true;
-    //         }
-    //         else if (y1 - 1 == y2)
-    //         {
-    //             return true;
-    //         }
-    //         else
-    //         {
-    //             return false;
-    //         }
-    //     }
-    //     if (x1 - 1 == x2)
-    //     {
-    //         if (y1 == y2)
-    //         {
-    //             return true;
-    //         }
-    //         else
-    //         {
-    //             return false;
-    //         }
-    //     }
-    //     return false;
-    // }
+    //https://perrfectsttarrttup.shop?onebendmaster-tech
 
     private bool CheckCombinationForElement(int x, int y)
     {
+        Debug.Log($"Checking [{x}|{y}], elementType = {arrayObjectsInCell[x,y].ElementType}");
         var maxIndexX = lineCount -1;
         var maxIndexY = columnCount -1;
 

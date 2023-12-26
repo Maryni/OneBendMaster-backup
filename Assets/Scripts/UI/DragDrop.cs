@@ -81,6 +81,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
                 int x = eventData.pointerCurrentRaycast.gameObject.GetComponent<MatchThreeFlexibleElement>().X;
                 int y = eventData.pointerCurrentRaycast.gameObject.GetComponent<MatchThreeFlexibleElement>().Y;
                 actionOnEndDrag?.Invoke(x,y);
+                Debug.Log("OnEndDrag called");
                 lastX = -1; //x
                 lastY = -1;
             
