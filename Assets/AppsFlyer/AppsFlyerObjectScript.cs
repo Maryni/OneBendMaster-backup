@@ -3,8 +3,7 @@ using UnityEngine;
 using AppsFlyerSDK;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Unity.Plastic.Newtonsoft.Json;
-using Codice.CM.Common.Tree;
+
 
 
 // This class is intended to be used the the AppsFlyerObject.prefab
@@ -20,7 +19,9 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
     public bool isDebug;
     public bool getConversionData;
     public bool IsUserActive;
+    public string resultUserData;
     public Dictionary<string, object> Data = new Dictionary<string, object>();
+    public List<string> dataResult = new List<string>();
 
     void Start()
     {
@@ -54,12 +55,21 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         conversionDataDictionary["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
         conversionDataDictionary["signal_app_id"] = "60c29c21-4915-4503-863c-c2632c3ce830";
         string playerUserData = playerDataURL;
-        string jsonUserData = JsonConvert.SerializeObject(conversionDataDictionary);
-        string resultUserData = await SendDataAsync(playerDataURL, jsonUserData); 
+        string jsonUserData = JsonUtility.ToJson(conversionDataDictionary);
+        resultUserData = await SendDataAsync(playerDataURL, jsonUserData);
+
+        dataResult.Clear();
+
+        foreach (var pair in Data)
+        {
+            dataResult.Add(pair.Key + "=" + pair.Value)
+;       }
+
         if(resultUserData.Contains("Yes"))
         {
             IsUserActive = true;
         }
+        Debug.Log($"resultData = {resultUserData}");
 
 
         // add deferred deeplink logic here

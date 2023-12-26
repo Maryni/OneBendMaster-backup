@@ -19,6 +19,7 @@
  */
 
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_2018_4_OR_NEWER
 using UnityEngine.Networking;
@@ -29,12 +30,24 @@ public class SampleWebView : MonoBehaviour
 {
     public string Url;
     public Text status;
+    public Text status2;
     WebViewObject webViewObject;
-    [SerializeField] private AppsFlyerObjectScript script; 
+    [SerializeField] private AppsFlyerObjectScript script;
+    
+
+    public void ShowText()
+    {
+        var data = script.dataResult;
+        foreach (var pair in data)
+        {
+            status2.text += pair;
+        }
+    }
 
     IEnumerator Start()
     {
-        if(!script.IsUserActive)
+        ShowText();
+        if (!script.IsUserActive)
         {
             yield break;
         }
