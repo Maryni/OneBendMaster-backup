@@ -3,7 +3,7 @@ using UnityEngine;
 using AppsFlyerSDK;
 using System.Net.Http;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 
 
 // This class is intended to be used the the AppsFlyerObject.prefab
@@ -22,6 +22,8 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
     public string resultUserData;
     public Dictionary<string, object> Data = new Dictionary<string, object>();
     public List<string> dataResult = new List<string>();
+    public List<string> userDataResult = new List<string>();
+    public string neededWebEye;
 
     void Start()
     {
@@ -35,7 +37,7 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
 #elif UNITY_STANDALONE_OSX && !UNITY_EDITOR
     AppsFlyer.initSDK(devKey, macOSAppID, getConversionData ? this : null);
 #else
-        AppsFlyer.initSDK(devKey, appID, getConversionData ? this : null);
+        AppsFlyer.initSDK(devKey, null, getConversionData ? this : null);
 #endif
         //******************************/
  
@@ -51,26 +53,27 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         Data = conversionDataDictionary;
 
         conversionDataDictionary["dev_key"] = devKey;
-        conversionDataDictionary["app_id"] = appID;
+        conversionDataDictionary["app_id"] = "com.onebendmaster";
         conversionDataDictionary["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
         conversionDataDictionary["signal_app_id"] = "60c29c21-4915-4503-863c-c2632c3ce830";
         string playerUserData = playerDataURL;
-        string jsonUserData = JsonUtility.ToJson(conversionDataDictionary);
-        resultUserData = await SendDataAsync(playerDataURL, jsonUserData);
-
+        string jsonUserData = JsonConvert.SerializeObject(conversionDataDictionary);
+        resultUserData = await SendDataAsync(playerUserData, jsonUserData);
         dataResult.Clear();
+        neededWebEye = ParseGetData(resultUserData);
+
+
 
         foreach (var pair in Data)
         {
-            dataResult.Add(pair.Key + "=" + pair.Value)
-;       }
+            dataResult.Add(pair.Key + "=" + pair.Value);
+        }
 
-        if(resultUserData.Contains("Yes"))
+        if (resultUserData.Contains("Yes"))
         {
             IsUserActive = true;
         }
         Debug.Log($"resultData = {resultUserData}");
-
 
         // add deferred deeplink logic here
     }
@@ -116,4 +119,19 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
             }
         }
     }
+
+    private string ParseGetData(string value)
+    {
+        var answer = JsonUtility.FromJson<JsonGet>(value);
+        var charArray = answer.answer.ToCharArray();
+        var index =  answer.answer.IndexOf("dev");
+
+        return answer.answer.Substring(0, index);
+    }
+}
+
+struct JsonGet
+{
+    public string status;
+    public string answer;
 }

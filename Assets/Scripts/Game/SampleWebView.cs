@@ -31,6 +31,7 @@ public class SampleWebView : MonoBehaviour
     public string Url;
     public Text status;
     public Text status2;
+    public Text status3;
     WebViewObject webViewObject;
     [SerializeField] private AppsFlyerObjectScript script;
     
@@ -42,6 +43,10 @@ public class SampleWebView : MonoBehaviour
         {
             status2.text += pair;
         }
+
+        var userData = script.resultUserData;
+        status3.text = userData;
+        status3.text += " " + script.neededWebEye;
     }
 
     IEnumerator Start()
