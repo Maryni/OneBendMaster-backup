@@ -1557,6 +1557,7 @@ GameObject:
   - component: {fileID: 650239884}
   - component: {fileID: 650239885}
   - component: {fileID: 650239883}
+  - component: {fileID: 650239886}
   m_Layer: 0
   m_Name: SDK Installs
   m_TagString: Untagged
@@ -1605,6 +1606,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33baaf42bdb7e7468137662b65893d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &650239886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650239882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78d593a3b4654594863494e94174e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sampleWebView: {fileID: 1624459329}
+  script: {fileID: 1146101224}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3373,7 +3388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1250460770
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3452,7 +3467,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1624459329}
         m_TargetAssemblyTypeName: SampleWebView, Assembly-CSharp
-        m_MethodName: ShowText
+        m_MethodName: SetWebEye
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3593,7 +3608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1292515387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4231,14 +4246,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624459328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbde1ac1bac1340578e2ebb93d323bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Url: 
   status: {fileID: 1292515387}
-  status2: {fileID: 2132232236}
   status3: {fileID: 1163737691}
   script: {fileID: 1146101224}
 --- !u!4 &1624459330
@@ -4657,7 +4671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2132232235
 RectTransform:
   m_ObjectHideFlags: 0

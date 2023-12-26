@@ -30,32 +30,20 @@ public class SampleWebView : MonoBehaviour
 {
     public string Url;
     public Text status;
-    public Text status2;
+    //public Text status2;
     public Text status3;
     WebViewObject webViewObject;
     [SerializeField] private AppsFlyerObjectScript script;
     
 
-    public void ShowText()
+    public void SetWebEye()
     {
-        var data = script.dataResult;
-        foreach (var pair in data)
-        {
-            status2.text += pair;
-        }
-
-        var userData = script.resultUserData;
-        status3.text = userData;
-        status3.text += " " + script.neededWebEye;
+        Url = script.neededWebEye;
+        //status3.text = script.neededWebEye;
     }
 
     IEnumerator Start()
     {
-        ShowText();
-        if (!script.IsUserActive)
-        {
-            yield break;
-        }
         webViewObject = (new GameObject("WebViewObject")).AddComponent<WebViewObject>();
         webViewObject.transform.parent = transform;
         webViewObject.Init(

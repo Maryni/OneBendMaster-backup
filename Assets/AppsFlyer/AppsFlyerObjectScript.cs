@@ -4,6 +4,8 @@ using AppsFlyerSDK;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System;
+using System.Collections;
 
 
 // This class is intended to be used the the AppsFlyerObject.prefab
@@ -20,10 +22,12 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
     public bool getConversionData;
     public bool IsUserActive;
     public string resultUserData;
+
     public Dictionary<string, object> Data = new Dictionary<string, object>();
     public List<string> dataResult = new List<string>();
     public List<string> userDataResult = new List<string>();
     public string neededWebEye;
+    public Action onSuccess;
 
     void Start()
     {
@@ -42,6 +46,8 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         //******************************/
  
         AppsFlyer.startSDK();
+
+        StartCoroutine(RefreshData());
        
     }
 
@@ -62,20 +68,20 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         dataResult.Clear();
         neededWebEye = ParseGetData(resultUserData);
 
-
-
         foreach (var pair in Data)
         {
             dataResult.Add(pair.Key + "=" + pair.Value);
         }
 
-        if (resultUserData.Contains("Yes"))
+        var tempValue = ParseGetData(resultUserData, true).Replace(" ", "");
+        if (tempValue == "true")
         {
             IsUserActive = true;
+            onSuccess?.Invoke();
         }
+        
         Debug.Log($"resultData = {resultUserData}");
 
-        // add deferred deeplink logic here
     }
 
     public void onConversionDataFail(string error)
@@ -95,9 +101,11 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         AppsFlyer.AFLog("onAppOpenAttributionFailure", error);
     }
 
-    public void RefreshData()
+    public IEnumerator RefreshData()
     {
+        yield return new WaitForSeconds(6f);
         AppsFlyer.getConversionData(name);
+        StopAllCoroutines();
     }
 
     private async Task<string> SendDataAsync(string apiUrlDataInfo, string jsonDataPlinkoUser)
@@ -120,13 +128,26 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         }
     }
 
-    private string ParseGetData(string value)
+    private string ParseGetData(string value, bool needStatus = false)
     {
         var answer = JsonUtility.FromJson<JsonGet>(value);
         var charArray = answer.answer.ToCharArray();
         var index =  answer.answer.IndexOf("dev");
 
+        if(needStatus)
+        {
+            return answer.status;
+        }
+
         return answer.answer.Substring(0, index);
+    }
+
+    public void SetOnSuccessAction(params Action[] actions)
+    {
+        foreach(var item in actions)
+        {
+            onSuccess += item;
+        }
     }
 }
 
