@@ -14,6 +14,8 @@ public class AppsFlyerObjectEditor : Editor
     SerializedProperty isDebug;
     SerializedProperty getConversionData;
     SerializedProperty playerDataURL;
+    SerializedProperty signalAppId;
+    SerializedProperty packageName;
 
 
     void OnEnable()
@@ -25,6 +27,8 @@ public class AppsFlyerObjectEditor : Editor
         isDebug = serializedObject.FindProperty("isDebug");
         getConversionData = serializedObject.FindProperty("getConversionData");
         playerDataURL = serializedObject.FindProperty("playerDataURL");
+        signalAppId = serializedObject.FindProperty("signalAppId");
+        packageName = serializedObject.FindProperty("packageName");
     }
 
 
@@ -43,6 +47,8 @@ public class AppsFlyerObjectEditor : Editor
         EditorGUILayout.PropertyField(UWPAppID);
         EditorGUILayout.PropertyField(macOSAppID);
         EditorGUILayout.PropertyField(playerDataURL);
+        EditorGUILayout.PropertyField(signalAppId);
+        EditorGUILayout.PropertyField(packageName);
         EditorGUILayout.Separator();
         EditorGUILayout.HelpBox("Enable get conversion data to allow your app to recive deeplinking callbacks", MessageType.None);
         EditorGUILayout.PropertyField(getConversionData);
@@ -53,7 +59,7 @@ public class AppsFlyerObjectEditor : Editor
 
         EditorGUILayout.HelpBox("For more information on setting up AppsFlyer check out our relevant docs.", MessageType.None);
 
-   
+
         if (GUILayout.Button("AppsFlyer Unity Docs", new GUILayoutOption[] { GUILayout.Width(200) }))
         {
             Application.OpenURL("https://support.appsflyer.com/hc/en-us/articles/213766183-Unity-SDK-integration-for-developers");

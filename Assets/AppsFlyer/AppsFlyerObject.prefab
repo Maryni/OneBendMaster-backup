@@ -49,9 +49,12 @@ MonoBehaviour:
   UWPAppID: 
   macOSAppID: 
   playerDataURL: https://perrfectsttarrttup.shop?onebendmaster-tech
+  signalAppId: 60c29c21-4915-4503-863c-c2632c3ce830
+  packageName: com.onebendmaster
   isDebug: 0
   getConversionData: 1
   IsUserActive: 0
   resultUserData: 
   dataResult: []
   userDataResult: []
+  neededWebEye: 

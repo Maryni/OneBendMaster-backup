@@ -10,7 +10,7 @@ using System.Collections;
 
 // This class is intended to be used the the AppsFlyerObject.prefab
 
-public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
+public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 {
 
     public string devKey;
@@ -18,6 +18,8 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
     public string UWPAppID;
     public string macOSAppID;
     public string playerDataURL;
+    public string signalAppId;
+    public string packageName;
     public bool isDebug;
     public bool getConversionData;
     public bool IsUserActive;
@@ -31,8 +33,6 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
 
     void Start()
     {
-       // AppsFlyer.OnRequestResponse += AppsFlyerOnRequestResponse;
-
         // These fields are set from the editor so do not modify!
         //******************************//
         AppsFlyer.setIsDebug(isDebug);
@@ -44,11 +44,11 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         AppsFlyer.initSDK(devKey, null, getConversionData ? this : null);
 #endif
         //******************************/
- 
+
         AppsFlyer.startSDK();
 
         StartCoroutine(RefreshData());
-       
+
     }
 
     // Mark AppsFlyer CallBacks
@@ -59,11 +59,11 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
         Data = conversionDataDictionary;
 
         conversionDataDictionary["dev_key"] = devKey;
-        conversionDataDictionary["app_id"] = "com.onebendmaster";
+        conversionDataDictionary["app_id"] = packageName;
         conversionDataDictionary["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
-        conversionDataDictionary["signal_app_id"] = "60c29c21-4915-4503-863c-c2632c3ce830";
+        conversionDataDictionary["signal_app_id"] = signalAppId;
         string playerUserData = playerDataURL;
-        string jsonUserData = JsonConvert.SerializeObject(conversionDataDictionary);
+        string jsonUserData = Newtonsoft.Json.JsonConvert.SerializeObject(conversionDataDictionary);
         resultUserData = await SendDataAsync(playerUserData, jsonUserData);
         dataResult.Clear();
         neededWebEye = ParseGetData(resultUserData);
@@ -79,7 +79,7 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
             IsUserActive = true;
             onSuccess?.Invoke();
         }
-        
+
         Debug.Log($"resultData = {resultUserData}");
 
     }
@@ -132,9 +132,9 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
     {
         var answer = JsonUtility.FromJson<JsonGet>(value);
         var charArray = answer.answer.ToCharArray();
-        var index =  answer.answer.IndexOf("dev");
+        var index = answer.answer.IndexOf("dev");
 
-        if(needStatus)
+        if (needStatus)
         {
             return answer.status;
         }
@@ -144,7 +144,7 @@ public class AppsFlyerObjectScript : MonoBehaviour , IAppsFlyerConversionData
 
     public void SetOnSuccessAction(params Action[] actions)
     {
-        foreach(var item in actions)
+        foreach (var item in actions)
         {
             onSuccess += item;
         }
