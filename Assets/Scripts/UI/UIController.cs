@@ -13,7 +13,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private ObjectPool objectPool;
     [SerializeField] private MatchThreeController_v2 controller;
     [SerializeField] private MatchThreeButtons matchThreeButtons;
-    [SerializeField] private BulletsController bulletsController;
+    [SerializeField] private GameObject buttonOpen;
+    [SerializeField] private GameObject buttonClose;
 
     #endregion Inspector variables
 
@@ -57,16 +58,14 @@ public class UIController : MonoBehaviour
             var dragDrop = tempArray[i].GetComponentInChildren<DragDrop>();
             dragDrop.SetActionOnDragWithParams(controller.SetValuesFromBeginDragPoint);
             dragDrop.SetActionOnEndDrag(controller.SetFirstsXY);
-            dragDrop.SetActionOnEndDragWithoutParams(
-                () => gameController.Player.SetCurrentBulletsForFirstBullet(bulletsController.GetBulletTextWhichLastUnzero())
-                //,() => bulletsController.SetBulletColorForFirstBulletWithoutColor(controller.ElementTypeLastConnections)
-                );
             dragDrop.SetActionCheckConnection(() => controller.CheckSlideConnectionBetweenOnBeginDragAndOnEndDrag());
         }
         matchThreeButtons.ButtonRecolorPanel.GetComponent<Button>().onClick.AddListener(controller.ResetAllCells);
         controller.SetObjectToPanel(tempArray);
         controller.HidePanel();
     }
+
+    public void ChangeVisibleState(GameObject item) => item.SetActive(!gameObject.activeSelf);
 
     #endregion private functions
 }

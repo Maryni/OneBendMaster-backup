@@ -78,15 +78,9 @@ public class ObjectPool : MonoBehaviour
 
     private IEnumerator Init()
     {
-        if (isStatsLoaded)
-        {
-            InitDefault(prefabsSpriteList, countSpriteExampleToInit, transformSpriteParent, exampleSpriteList);
-        }
-        else
-        {
-            yield return new WaitForEndOfFrame();
-            yield return Init();
-        }
+
+        InitDefault(prefabsSpriteList, countSpriteExampleToInit, transformSpriteParent, exampleSpriteList);
+        yield break;
 
     }
 

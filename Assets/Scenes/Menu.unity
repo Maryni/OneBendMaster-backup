@@ -1345,7 +1345,8 @@ MonoBehaviour:
   objectPool: {fileID: 1191301160}
   controller: {fileID: 1249288854}
   matchThreeButtons: {fileID: 298129252}
-  bulletsController: {fileID: 1751670439}
+  buttonOpen: {fileID: 1232557030}
+  buttonClose: {fileID: 294588803}
 --- !u!114 &504849359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,37 +1366,6 @@ MonoBehaviour:
   exitGameObject: {fileID: 483177073}
   mainPanelGameObject: {fileID: 1276259254}
   MatchThreePanel: {fileID: 1249288850}
---- !u!1 &514987949
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 514987950}
-  m_Layer: 0
-  m_Name: EnemyPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &514987950
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514987949}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1191301162}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &530280428
 GameObject:
   m_ObjectHideFlags: 0
@@ -3087,8 +3057,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1381345723}
-  - {fileID: 514987950}
   - {fileID: 1109990774}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3810,37 +3778,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337489395}
   m_CullTransparentMesh: 1
---- !u!1 &1381345722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1381345723}
-  m_Layer: 0
-  m_Name: BulletPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1381345723
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1381345722}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1191301162}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1408358308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,6 +4498,7 @@ MonoBehaviour:
   colorNatureElemental: {fileID: 21300000, guid: f13d44101b0de79488f390d273e9edc2, type: 3}
   colorMagicElemental: {fileID: 21300000, guid: 7a533be521a3add4fb453277c695497b, type: 3}
   colorDefaultElemental: {fileID: 21300000, guid: 97068e8ba25368a40a8bd289c1d09fd3, type: 3}
+  poolBullets: {fileID: 0}
   countAvaliablePlaceForBullet: 0
 --- !u!1 &1969186785
 GameObject:
