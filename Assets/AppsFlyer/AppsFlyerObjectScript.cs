@@ -40,8 +40,10 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         AppsFlyer.initSDK(devKey, UWPAppID, getConversionData ? this : null);
 #elif UNITY_STANDALONE_OSX && !UNITY_EDITOR
     AppsFlyer.initSDK(devKey, macOSAppID, getConversionData ? this : null);
-#else
+#elif UNITY_ANDROID
         AppsFlyer.initSDK(devKey, null, getConversionData ? this : null);
+#elif UNITY_IOS
+        AppsFlyer.initSDK(devKey, appID, getConversionData ? this : null);
 #endif
         //******************************/
 
