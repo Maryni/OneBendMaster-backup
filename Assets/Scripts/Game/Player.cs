@@ -109,18 +109,6 @@ public class Player : MonoBehaviour
         currentHp -= value;
     }
 
-    public void SetActiveBullet(GameObject bullet)
-    {
-        if (bullet.GetComponent<BaseBullet>().ElementType != ElementType.NoElement)
-        {
-            activeBullet = bullet;   
-        }
-        else
-        {
-            Debug.LogError($"ActiveBullet ElementType = NoElement");
-        }
-    }
-
     public void SetCountCurrentBullets()
     {
         currentBulletsCount = maxBulletTypeCount.FirstOrDefault(x => x > 0);

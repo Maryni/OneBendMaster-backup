@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 
+public enum ElementType
+{
+    NoElement,
+    Fire,
+    Water,
+    Energy,
+    Nature,
+    Magic
+}
+
 public class MatchThreeFlexibleElement : BaseMatchThree
 {
     #region Inspector variables

@@ -20,10 +20,6 @@ public class GameController : MonoBehaviour
     private Player player;
     private BulletsController bulletsController;
     private SaveLoadController saveLoadController;
-    private ObjectPool objectPool;
-    private PunBallPoolCells punBallPoolCells;
-    private SpawnController spawnController;
-    private StatsController statsController;
     private UIController uiController;
     private MatchThreeButtons matchThreeButtons;
 
@@ -33,8 +29,6 @@ public class GameController : MonoBehaviour
 
     public Player Player => player;
     public SaveLoadController SaveLoadController => saveLoadController;
-    public PunBallPoolCells PunBallPoolCells => punBallPoolCells;
-    public ObjectPool ObjectPool => objectPool;
     public UIController UIController => uiController;
     public int WaveIndex => waveIndex;
     public Data WaveData => waveData;
@@ -56,7 +50,6 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         SetEnoughBulletsSprite();
-        SetWaveData();
     }
 
     #endregion Unity functions
@@ -79,27 +72,9 @@ public class GameController : MonoBehaviour
             player = FindObjectOfType<Player>();
         }
 
-
-
-        if (punBallPoolCells == null)
-        {
-            punBallPoolCells = FindObjectOfType<PunBallPoolCells>();
-        }
-
         if (saveLoadController == null)
         {
             saveLoadController = FindObjectOfType<SaveLoadController>();
-        }
-
-        if (objectPool == null)
-        {
-            objectPool = FindObjectOfType<ObjectPool>();
-        }
-
-        if (statsController == null)
-        {
-           statsController = saveLoadController.GetComponent<StatsController>();
-           statsController.SetGameController(this);
         }
     }
 
@@ -114,22 +89,11 @@ public class GameController : MonoBehaviour
         bulletsController.SetAvalibleCountBullets();
     }
 
-    private void SetWaveData()
-    {
-        Debug.Log($"[SetWaveData] waveIndex = {waveIndex}");
-        waveData = saveLoadController.GetWaveData(waveIndex,saveLoadController.LastCompleteLevel);
-    }
-
-
     private void LoadAfterGameSceneWasLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"Scene [{scene.name}] was loaded");
         if (scene.buildIndex == 1)
         {
-            if (spawnController == null)
-            {
-                spawnController = FindObjectOfType<SpawnController>();
-            }
 
             if (uiController == null)
             {
@@ -150,40 +114,8 @@ public class GameController : MonoBehaviour
     /// </summary>
     private void SetActions()
     {
-        spawnController.SetActionAfterSpawn(
-            ()=> statsController.SetLastWaveSpawnedList(spawnController.LastWaveSpawnedList)
-            );
-        player.SetActionsOnShoot(
-            () =>player.SetActiveBullet(
-                ObjectPool.GetObjectByType(
-                ObjectType.Bullet, bulletsController.GetFirstBulletElementType())
-                ),
-            ()=>bulletsController.SetBulletTextLesserByOneForFirstUnzero()
-                );
-        bulletsController.SetActionWhenAllBulletsColored(player.ChangeCanShootState);
-        player.SetActionAfterShootingWhenBulletsZero(CompleteWave);
-        player.SetActionAfterShootAllBullets(bulletsController.CheckBulletsForZero);
         matchThreeButtons.ButtonClosePanel.GetComponent<Button>().onClick.AddListener(player.ChangePanelClosedState);
         matchThreeButtons.ButtonOpenPanel.GetComponent<Button>().onClick.AddListener(player.ChangePanelClosedState);
-    }
-
-    private void CompleteWave()
-    {
-        if (waveIndex < saveLoadController.GetFullLevelData(saveLoadController.LastCompleteLevel).GetWaveCount())
-        {
-            waveIndex++; 
-        }
-        else if (waveIndex == saveLoadController.GetFullLevelData(saveLoadController.LastCompleteLevel).GetWaveCount() - 1)
-        {
-            saveLoadController.GetFullLevelData(saveLoadController.LastCompleteLevel).SetLevelComplete();
-        }
-        
-        SetWaveData();
-        spawnController.MovePreviousEnemyForward();
-        spawnController.Spawn();
-        statsController.SetStatsToSpawnedEnemy();
-        player.ChangeCanShootState();
-        bulletsController.SetAvalibleCountBullets();
     }
 
     #endregion private functions

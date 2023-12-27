@@ -8,6 +8,7 @@ public class MatchThreeButtons : MonoBehaviour
 
     [SerializeField] private GameObject buttonOpenPanel;
     [SerializeField] private GameObject buttonClosePanel;
+    [SerializeField] private GameObject buttonRecolorPanel;
 
     #endregion Inspector variables
 
@@ -15,6 +16,7 @@ public class MatchThreeButtons : MonoBehaviour
 
     public GameObject ButtonClosePanel => buttonClosePanel;
     public GameObject ButtonOpenPanel => buttonOpenPanel;
+    public GameObject ButtonRecolorPanel => buttonRecolorPanel;
 
     #endregion properties
 }

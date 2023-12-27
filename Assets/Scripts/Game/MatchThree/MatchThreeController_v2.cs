@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System;
+using Random = UnityEngine.Random;
 
 public class MatchThreeController_v2 : MonoBehaviour
 {
@@ -9,6 +12,7 @@ public class MatchThreeController_v2 : MonoBehaviour
     [SerializeField] private float valueLocalScaleConnectedElement;
     [SerializeField] private GameObject gamePanelGameObject;
     [SerializeField] private GameObject panelForHideObjects;
+    [SerializeField] private TMP_Text text;
 
     [Header("Sprites in cells"),SerializeField] private Sprite spriteFire;
     [SerializeField] private Sprite spriteWater;
@@ -19,27 +23,30 @@ public class MatchThreeController_v2 : MonoBehaviour
 
     [SerializeField] private int countConnectedCells;
     [SerializeField] private ElementType elementTypeLastConnections = ElementType.NoElement;
-   
+    [SerializeField] private List<MatchThreeFlexibleElement> arrayObjectsSelected;
+
     #endregion Inspector variables
-    
+
     #region private variables
 
     private int columnCount = 6;
     private int lineCount = 6;
     private MatchThreeFlexibleElement[,] arrayObjectsInCell;
-    //[SerializeField] private List<MatchThreeFlexibleElement> arrayObjectsConnected;
-    [SerializeField] private List<MatchThreeFlexibleElement> arrayObjectsSelected;
     private int xFirst = -1, xSecond = -1;
     private int yFirst = -1, ySecond = -1;
+    private int gameScore = 0;
+    private Action onCombinationSuccess;
 
     #endregion private variables
-    
+
     #region properties
 
     public int ColumnCount => columnCount;
     public int LineCount => lineCount;
     public ElementType ElementTypeLastConnections => elementTypeLastConnections;
     public GameObject GamePanel => gamePanelGameObject;
+    public int GameScore => gameScore;
+    public TMP_Text Text => text;
 
     #endregion properties
     
@@ -60,21 +67,16 @@ public class MatchThreeController_v2 : MonoBehaviour
         Debug.Log($"xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
         if ((xFirst != -1 && yFirst != -1) && (xSecond != -1 && ySecond != -1))
         {
-            //Debug.Log($"[2] xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
             SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, true);
             ChangeElementsInArray();
-            //Debug.Log($"[3] xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
 
             if (CheckCombinationForElement(xSecond, ySecond))
             {
-                //SwapValues(xSecond, ySecond, xFirst, yFirst);
-                //SwapValues(ref xFirst,ref yFirst,ref xSecond, ref ySecond, true);
-                //ChangeElementsInArray();
+                gameScore++;
+                ChangeSelectedElements();
+                arrayObjectsSelected.Clear();
+                onCombinationSuccess?.Invoke();
                 return;
-                //countConnectedCells++;
-                //xSecond = xFirst;
-                //ySecond = yFirst;
-                //Debug.Log($"connection YES | countConnectedCells = [{countConnectedCells}] ");
             }
             else
             {
@@ -84,6 +86,15 @@ public class MatchThreeController_v2 : MonoBehaviour
             }
         }
 
+    }
+
+    //fall after connect
+    private void ChangeSelectedElements()
+    {
+        foreach(var element in arrayObjectsSelected)
+        {
+            SetRandomElementToCell(element);
+        }
     }
 
     private void SwapValues(ref int x1, ref int y1, ref int x2, ref int y2, bool needToResetXY = false)
@@ -157,6 +168,16 @@ public class MatchThreeController_v2 : MonoBehaviour
         arrayObjectsInCell[xSecond,ySecond].SetSprite(arrayObjectsInCell[xFirst,yFirst].Sprite);
         arrayObjectsInCell[xFirst,yFirst].SetSprite(tempSprite);
     }
+
+    public void SetActionsOnSuccessCombination(params Action[] actions)
+    {
+        foreach(var item in actions)
+        {
+            onCombinationSuccess += item;
+        }
+    }
+
+    public void ResetAllCells() => SetRandomElementsToCells();
 
     #endregion public functions
 
@@ -262,9 +283,22 @@ public class MatchThreeController_v2 : MonoBehaviour
                 }
             }
         }
+    }
 
+    private void SetRandomElementToCell(MatchThreeFlexibleElement element)
+    {
+        var tempRandomElementType = (ElementType)Random.Range(1, System.Enum.GetValues(typeof(ElementType)).Length);
+        element.SetElementType(tempRandomElementType);
+        switch (tempRandomElementType)
+        {
+            case ElementType.Fire: element.SetSprite(spriteFire); break;
+            case ElementType.Water: element.SetSprite(spriteWater); break;
+            case ElementType.Nature: element.SetSprite(spriteNature); break;
+            case ElementType.Energy: element.SetSprite(spriteEnergy); break;
+            case ElementType.Magic: element.SetSprite(spriteMagic); break;
+            default: element.SetSprite(spriteClear); break;
+        }
     }
     
-    #endregion private functions
-    
+    #endregion private functions   
 }

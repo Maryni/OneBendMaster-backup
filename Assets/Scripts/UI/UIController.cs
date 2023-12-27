@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameController gameController;
     [SerializeField] private ObjectPool objectPool;
     [SerializeField] private MatchThreeController_v2 controller;
+    [SerializeField] private MatchThreeButtons matchThreeButtons;
     [SerializeField] private BulletsController bulletsController;
 
     #endregion Inspector variables
@@ -53,16 +55,15 @@ public class UIController : MonoBehaviour
             tempArray[i] = objectPool.GetObjectByType(ObjectType.MatchThreeSprite, ElementType.NoElement);
             tempArray[i].SetActive(true);
             var dragDrop = tempArray[i].GetComponentInChildren<DragDrop>();
-            //dragDrop.SetActionOnDragRemoveConenction(controller.CheckAndRemoveLastElementInConnectedList);
             dragDrop.SetActionOnDragWithParams(controller.SetValuesFromBeginDragPoint);
             dragDrop.SetActionOnEndDrag(controller.SetFirstsXY);
             dragDrop.SetActionOnEndDragWithoutParams(
-                //() => controller.CheckElementsIfWasRemoved(),
-                //() => bulletsController.SetBulletTextForFirstNonElementBullet(controller.GetCountConnectedCellsLastConnection()),
-                () => gameController.Player.SetCurrentBulletsForFirstBullet(bulletsController.GetBulletTextWhichLastUnzero()),
-                () => bulletsController.SetBulletColorForFirstBulletWithoutColor(controller.ElementTypeLastConnections));
+                () => gameController.Player.SetCurrentBulletsForFirstBullet(bulletsController.GetBulletTextWhichLastUnzero())
+                //,() => bulletsController.SetBulletColorForFirstBulletWithoutColor(controller.ElementTypeLastConnections)
+                );
             dragDrop.SetActionCheckConnection(() => controller.CheckSlideConnectionBetweenOnBeginDragAndOnEndDrag());
         }
+        matchThreeButtons.ButtonRecolorPanel.GetComponent<Button>().onClick.AddListener(controller.ResetAllCells);
         controller.SetObjectToPanel(tempArray);
         controller.HidePanel();
     }
