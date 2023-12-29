@@ -6,8 +6,6 @@ using System.Linq;
 
 public enum ObjectType
 {
-    Bullet,
-    Enemy,
     MatchThreeSprite
 }
 public class ObjectPool : MonoBehaviour
@@ -37,7 +35,7 @@ public class ObjectPool : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Init());
+        //StartCoroutine(Init());
     }
 
     #endregion Unity functions
@@ -66,6 +64,11 @@ public class ObjectPool : MonoBehaviour
         Debug.LogError("Incorrect Function GetObjectByType Work");
         return new GameObject();
     }
+    
+     public List<GameObject> GetListObject()
+     {
+         return exampleSpriteList;
+     }
 
     public void ChangeStatsLoadState()
     {

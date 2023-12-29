@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8116625311560528442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6410039333707730343}
+  - component: {fileID: 4127296850435882030}
+  - component: {fileID: 5481575688711079771}
+  - component: {fileID: 6203960064002822895}
+  m_Layer: 5
+  m_Name: Polygon 5 1424027638
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6410039333707730343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116625311560528442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 288.0703, y: 239}
+  m_SizeDelta: {x: 16, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4127296850435882030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116625311560528442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 3:1499
+    formattedName: Polygon 5
+    spriteName: Polygon 5 4x 1424027638.png
+    tags: c9000000
+    childIndexes: 
+    fcuInstance: {fileID: 0}
+    gameObject: {fileID: 8116625311560528442}
+    transformData:
+      anchorMin: {x: 0.5, y: 0.5}
+      anchorMax: {x: 0.5, y: 0.5}
+      anchoredPosition: {x: 0.0703125, y: -2}
+      sizeDelta: {x: 16, y: 14, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 1}
+      localScale: {x: 1, y: 1, z: 1}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 64, y: 56}
+    size: {x: 16, y: 14}
+    position: {x: 280.0703, y: 246}
+    fcuImageType: 1
+    buttonComponent: 0
+    hash: 1424027638
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 23/Polygon 5\r\n    isVisible |
+      True\r\n    Type | REGULAR_POLYGON\r\n    GetFigmaRotationAngle | 0\r\n   
+      FillGeometry | 665063156\r\n    StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n   
+      CornerRadius | 1\r\n    BlendMode | PASS_THROUGH\r\n    Size | (20.00, 20.00)\r\n   
+      isVisible | True\r\n    Type | REGULAR_POLYGON\r\n    GetFigmaRotationAngle
+      | 0\r\n    FillGeometry | 665063156\r\n    StrokeWeight | 1\r\n    StrokeAlign
+      | INSIDE\r\n    CornerRadius | 1\r\n    BlendMode | PASS_THROUGH\r\n    Size
+      | (20.00, 20.00)\r\n    \u2014\u2014\u2014\u2014Fills\r\n        IsVisible
+      | True\r\n        Type | SOLID\r\n        Color | RGBA(0.851, 0.851, 0.851,
+      1.000)\r\n        BlendMode | NORMAL\r\n        IsVisible | True\r\n       
+      Type | GRADIENT_LINEAR\r\n        Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n       
+      BlendMode | NORMAL\r\n        Color | RGBA(0.114, 0.569, 0.000, 1.000)\r\n       
+      Position | 0\r\n        Color | RGBA(0.903, 0.994, 0.880, 1.000)\r\n       
+      Position | 0.1789235\r\n        Color | RGBA(0.181, 0.640, 0.067, 1.000)\r\n       
+      Position | 0.2486589\r\n        Color | RGBA(0.263, 0.792, 0.130, 1.000)\r\n       
+      Position | 0.4292425\r\n        Color | RGBA(0.680, 1.000, 0.600, 1.000)\r\n       
+      Position | 0.4487118\r\n        Color | RGBA(0.148, 0.519, 0.055, 1.000)\r\n       
+      Position | 0.6543273\r\n        Color | RGBA(0.627, 1.000, 0.533, 1.000)\r\n       
+      Position | 1\r\n        GradientHandlePositions | (0.08, 0.08) (0.50, 1.53)
+      (-0.64, 0.29)\r\n    \u2014\u2014\u2014\u2014Strokes\r\n        IsVisible |
+      True\r\n        Type | GRADIENT_LINEAR\r\n        Color | RGBA(0.000, 0.000,
+      0.000, 0.000)\r\n        BlendMode | NORMAL\r\n        Color | RGBA(0.404,
+      0.721, 0.255, 1.000)\r\n        Position | 0\r\n        Color | RGBA(0.694,
+      1.000, 0.550, 1.000)\r\n        Position | 0.3466328\r\n        Color | RGBA(0.135,
+      0.356, 0.031, 1.000)\r\n        Position | 0.7438279\r\n        Color | RGBA(0.331,
+      0.677, 0.168, 1.000)\r\n        Position | 1\r\n        GradientHandlePositions
+      | (0.80, 0.80) (0.20, 0.23) (1.09, 0.50)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n       
+      StartingAngle | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n"
+    parentIndex: 141
+    hierarchy: Frame 23/Polygon 5
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: SingleImage
+    downloadAttempsCount: 1
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 1
+    needGenerate: 0
+    forceImage: 1
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!222 &5481575688711079771
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116625311560528442}
+  m_CullTransparentMesh: 1
+--- !u!114 &6203960064002822895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116625311560528442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3e792e3758edc9746a1cf4c32987f038, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

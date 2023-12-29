@@ -29,8 +29,8 @@ public class MatchThreeController_v2 : MonoBehaviour
 
     #region private variables
 
-    private int columnCount = 6;
-    private int lineCount = 6;
+    private int columnCount = 8;
+    private int lineCount = 8;
     private MatchThreeFlexibleElement[,] arrayObjectsInCell;
     private int xFirst = -1, xSecond = -1;
     private int yFirst = -1, ySecond = -1;

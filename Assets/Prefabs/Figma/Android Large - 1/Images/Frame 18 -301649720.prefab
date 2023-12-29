@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7013129320075790566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840788919166217044}
+  - component: {fileID: 3533343414116151906}
+  - component: {fileID: 3997073452804770448}
+  - component: {fileID: 5279380269764744138}
+  - component: {fileID: 4120017601717925265}
+  m_Layer: 5
+  m_Name: Frame 18 -301649720
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7840788919166217044
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013129320075790566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3533343414116151906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013129320075790566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: I3:2009;3:401
+    formattedName: Frame 18
+    spriteName: Frame 18 4x -301649720.png
+    tags: c9000000
+    childIndexes: 
+    fcuInstance: {fileID: 0}
+    gameObject: {fileID: 7013129320075790566}
+    transformData:
+      anchorMin: {x: 0, y: 1}
+      anchorMax: {x: 0, y: 1}
+      anchoredPosition: {x: 186, y: -16}
+      sizeDelta: {x: 32, y: 32, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 1}
+      localScale: {x: 1, y: 1, z: 1}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 128, y: 128}
+    size: {x: 32, y: 32}
+    position: {x: 35, y: 136}
+    fcuImageType: 1
+    buttonComponent: 0
+    hash: -301649720
+    hashDataTree: "\u2014\u2014\u2014\u2014Android Large - 1/Group 19/Frame 9/Frame
+      18\r\n    isVisible | True\r\n    Type | FRAME\r\n    GetFigmaRotationAngle
+      | 0\r\n    StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    BlendMode |
+      PASS_THROUGH\r\n    ClipsContent | False\r\n    Size | (32.00, 32.00)\r\n   
+      isVisible | True\r\n    Type | FRAME\r\n    GetFigmaRotationAngle | 0\r\n   
+      StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    BlendMode | PASS_THROUGH\r\n   
+      ClipsContent | False\r\n    Size | (32.00, 32.00)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n       
+      StartingAngle | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n\u2014\u2014\u2014\u2014Android
+      Large - 1/Group 19/Frame 9/Frame 18/Rectangle 36\r\n    isVisible | True\r\n   
+      Type | RECTANGLE\r\n    GetFigmaRotationAngle | 0\r\n    FillGeometry | 2080524277\r\n   
+      StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadius | 2\r\n   
+      BlendMode | PASS_THROUGH\r\n    Size | (32.00, 32.00)\r\n    isVisible | True\r\n   
+      Type | RECTANGLE\r\n    GetFigmaRotationAngle | 0\r\n    FillGeometry | 2080524277\r\n   
+      StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadius | 2\r\n   
+      BlendMode | PASS_THROUGH\r\n    Size | (32.00, 32.00)\r\n    \u2014\u2014\u2014\u2014Fills\r\n       
+      IsVisible | True\r\n        Type | GRADIENT_LINEAR\r\n        Opacity | 0.8\r\n       
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n        BlendMode | NORMAL\r\n       
+      Color | RGBA(0.118, 0.118, 0.118, 1.000)\r\n        Position | 0\r\n       
+      Color | RGBA(0.167, 0.167, 0.167, 1.000)\r\n        Position | 1\r\n       
+      GradientHandlePositions | (0.50, 0.00) (0.50, 1.00) (0.00, 0.00)\r\n    \u2014\u2014\u2014\u2014Effects\r\n       
+      IsVisible | True\r\n        Type | INNER_SHADOW\r\n        Radius | 4\r\n       
+      Color | RGBA(0.000, 0.000, 0.000, 0.250)\r\n        BlendMode | NORMAL\r\n       
+      Offset | (0.00, 4.00)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n        StartingAngle
+      | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n"
+    parentIndex: 46
+    hierarchy: Android Large - 1/Group 19/Frame 9/Frame 18
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: SingleImage
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 1
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 1
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!114 &3997073452804770448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013129320075790566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 32
+  m_MinHeight: 32
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!222 &5279380269764744138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013129320075790566}
+  m_CullTransparentMesh: 1
+--- !u!114 &4120017601717925265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013129320075790566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e4f0eb652a0709b4f8b6c3f90b997fca, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

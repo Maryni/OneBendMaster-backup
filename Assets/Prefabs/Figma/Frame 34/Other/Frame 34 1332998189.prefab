@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7629598168876108073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6013403432695743266}
+  - component: {fileID: 3408983057356434758}
+  - component: {fileID: 4541310911149491751}
+  m_Layer: 5
+  m_Name: Frame 34 1332998189
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6013403432695743266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629598168876108073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5508325150416070296}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 444, y: 97}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3408983057356434758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629598168876108073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 3:1650
+    formattedName: Frame 34
+    spriteName: 
+    tags: 02000000f601000001000000
+    childIndexes: 92000000
+    fcuInstance: {fileID: 0}
+    gameObject: {fileID: 7629598168876108073}
+    transformData:
+      anchorMin: {x: 0, y: 1}
+      anchorMax: {x: 0, y: 1}
+      anchoredPosition: {x: 444, y: -1823}
+      sizeDelta: {x: 32, y: 32, z: 0}
+      localRotation: {x: -0, y: -0, z: -0, w: 1}
+      localScale: {x: 1, y: 1, z: 1}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 32, y: 32}
+    position: {x: 428, y: 113}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: 1332998189
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 34\r\n    isVisible | True\r\n   
+      Type | FRAME\r\n    GetFigmaRotationAngle | 0\r\n    FillGeometry | 1140590155\r\n   
+      StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    BlendMode | PASS_THROUGH\r\n   
+      ClipsContent | True\r\n    Size | (32.00, 32.00)\r\n    isVisible | True\r\n   
+      Type | FRAME\r\n    GetFigmaRotationAngle | 0\r\n    FillGeometry | 1140590155\r\n   
+      StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    BlendMode | PASS_THROUGH\r\n   
+      ClipsContent | True\r\n    Size | (32.00, 32.00)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n       
+      StartingAngle | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n\u2014\u2014\u2014\u2014Frame
+      34/Group 10\r\n    isVisible | True\r\n    Type | GROUP\r\n    GetFigmaRotationAngle
+      | 0\r\n    StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadiuses
+      | 0 0 0 0\r\n    BlendMode | PASS_THROUGH\r\n    ClipsContent | False\r\n   
+      Size | (31.95, 31.95)\r\n    isVisible | True\r\n    Type | GROUP\r\n    GetFigmaRotationAngle
+      | 0\r\n    StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadiuses
+      | 0 0 0 0\r\n    BlendMode | PASS_THROUGH\r\n    ClipsContent | False\r\n   
+      Size | (31.95, 31.95)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n        StartingAngle
+      | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n\u2014\u2014\u2014\u2014Frame
+      34/Group 10/Group 9\r\n    isVisible | True\r\n    Type | GROUP\r\n    GetFigmaRotationAngle
+      | 0\r\n    StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadiuses
+      | 0 0 0 0\r\n    BlendMode | PASS_THROUGH\r\n    ClipsContent | False\r\n   
+      Size | (31.95, 31.95)\r\n    isVisible | True\r\n    Type | GROUP\r\n    GetFigmaRotationAngle
+      | 0\r\n    StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadiuses
+      | 0 0 0 0\r\n    BlendMode | PASS_THROUGH\r\n    ClipsContent | False\r\n   
+      Size | (31.95, 31.95)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n        StartingAngle
+      | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n\u2014\u2014\u2014\u2014Frame
+      34/Group 10/Group 9/Star 1\r\n    isVisible | True\r\n    Type | STAR\r\n   
+      GetFigmaRotationAngle | 0\r\n    FillGeometry | 1349080789\r\n    StrokeWeight
+      | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadius | 1\r\n    BlendMode |
+      PASS_THROUGH\r\n    Size | (31.95, 31.95)\r\n    isVisible | True\r\n    Type
+      | STAR\r\n    GetFigmaRotationAngle | 0\r\n    FillGeometry | 1349080789\r\n   
+      StrokeWeight | 1\r\n    StrokeAlign | INSIDE\r\n    CornerRadius | 1\r\n   
+      BlendMode | PASS_THROUGH\r\n    Size | (31.95, 31.95)\r\n    \u2014\u2014\u2014\u2014Fills\r\n       
+      IsVisible | True\r\n        Type | GRADIENT_LINEAR\r\n        Color | RGBA(0.000,
+      0.000, 0.000, 0.000)\r\n        BlendMode | NORMAL\r\n        Color | RGBA(1.000,
+      0.813, 0.150, 1.000)\r\n        Position | 0\r\n        Color | RGBA(1.000,
+      0.957, 0.804, 1.000)\r\n        Position | 0.1557406\r\n        Color | RGBA(0.967,
+      0.713, 0.060, 1.000)\r\n        Position | 0.1997075\r\n        Color | RGBA(0.990,
+      0.664, 0.364, 1.000)\r\n        Position | 0.4094813\r\n        Color | RGBA(1.000,
+      0.858, 0.492, 1.000)\r\n        Position | 0.4305017\r\n        Color | RGBA(1.000,
+      0.743, 0.083, 1.000)\r\n        Position | 0.6558095\r\n        Color | RGBA(1.000,
+      0.940, 0.785, 1.000)\r\n        Position | 0.8344953\r\n        Color | RGBA(1.000,
+      0.576, 0.079, 1.000)\r\n        Position | 1\r\n        GradientHandlePositions
+      | (0.23, 0.13) (0.78, 0.88) (-0.14, 0.41)\r\n    \u2014\u2014\u2014\u2014Strokes\r\n       
+      IsVisible | True\r\n        Type | GRADIENT_LINEAR\r\n        Color | RGBA(0.000,
+      0.000, 0.000, 0.000)\r\n        BlendMode | NORMAL\r\n        Color | RGBA(1.000,
+      0.999, 0.994, 1.000)\r\n        Position | 0.1326478\r\n        Color | RGBA(1.000,
+      0.813, 0.152, 1.000)\r\n        Position | 0.2784693\r\n        Color | RGBA(1.000,
+      0.929, 0.678, 1.000)\r\n        Position | 0.5891685\r\n        Color | RGBA(1.000,
+      0.749, 0.102, 1.000)\r\n        Position | 0.8161861\r\n        Color | RGBA(1.000,
+      0.844, 0.292, 1.000)\r\n        Position | 1\r\n        GradientHandlePositions
+      | (0.23, 0.10) (0.77, 0.90) (-0.17, 0.37)\r\n    \u2014\u2014\u2014\u2014ArcData\r\n       
+      StartingAngle | 0\r\n        EndingAngle | 0\r\n        InnerRadius | 0\r\n   
+      \u2014\u2014\u2014\u2014Frame 34/Group 10/Group 9/Star 3\r\n        isVisible
+      | True\r\n        Type | STAR\r\n        GetFigmaRotationAngle | 0\r\n       
+      FillGeometry | 1349080789\r\n        StrokeWeight | 1\r\n        StrokeAlign
+      | INSIDE\r\n        CornerRadius | 1\r\n        BlendMode | PASS_THROUGH\r\n       
+      Size | (31.95, 31.95)\r\n        isVisible | True\r\n        Type | STAR\r\n       
+      GetFigmaRotationAngle | 0\r\n        FillGeometry | 1349080789\r\n        StrokeWeight
+      | 1\r\n        StrokeAlign | INSIDE\r\n        CornerRadius | 1\r\n       
+      BlendMode | PASS_THROUGH\r\n        Size | (31.95, 31.95)\r\n        \u2014\u2014\u2014\u2014Fills\r\n           
+      IsVisible | True\r\n            Type | GRADIENT_LINEAR\r\n            Color
+      | RGBA(0.000, 0.000, 0.000, 0.000)\r\n            BlendMode | NORMAL\r\n           
+      Color | RGBA(1.000, 0.813, 0.150, 1.000)\r\n            Position | 0\r\n           
+      Color | RGBA(1.000, 0.957, 0.804, 1.000)\r\n            Position | 0.1557406\r\n           
+      Color | RGBA(0.967, 0.713, 0.060, 1.000)\r\n            Position | 0.1997075\r\n           
+      Color | RGBA(0.990, 0.664, 0.364, 1.000)\r\n            Position | 0.4094813\r\n           
+      Color | RGBA(1.000, 0.858, 0.492, 1.000)\r\n            Position | 0.4305017\r\n           
+      Color | RGBA(1.000, 0.743, 0.083, 1.000)\r\n            Position | 0.6558095\r\n           
+      Color | RGBA(1.000, 0.940, 0.785, 1.000)\r\n            Position | 0.8344953\r\n           
+      Color | RGBA(1.000, 0.576, 0.079, 1.000)\r\n            Position | 1\r\n           
+      GradientHandlePositions | (0.23, 0.13) (0.63, 0.83) (-0.11, 0.33)\r\n       
+      \u2014\u2014\u2014\u2014Strokes\r\n            IsVisible | True\r\n           
+      Type | GRADIENT_LINEAR\r\n            Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n           
+      BlendMode | NORMAL\r\n            Color | RGBA(1.000, 0.999, 0.994, 1.000)\r\n           
+      Position | 0.1326478\r\n            Color | RGBA(1.000, 0.813, 0.152, 1.000)\r\n           
+      Position | 0.2784693\r\n            Color | RGBA(1.000, 0.929, 0.678, 1.000)\r\n           
+      Position | 0.5891685\r\n            Color | RGBA(1.000, 0.749, 0.102, 1.000)\r\n           
+      Position | 0.8161861\r\n            Color | RGBA(1.000, 0.844, 0.292, 1.000)\r\n           
+      Position | 1\r\n            GradientHandlePositions | (0.23, 0.10) (0.77, 0.90)
+      (-0.17, 0.37)\r\n        \u2014\u2014\u2014\u2014ArcData\r\n            StartingAngle
+      | 0\r\n            EndingAngle | 0\r\n            InnerRadius | 0\r\n    \u2014\u2014\u2014\u2014Frame
+      34/Group 10/Star 2\r\n        isVisible | True\r\n        Type | STAR\r\n       
+      GetFigmaRotationAngle | 0\r\n        FillGeometry | -1478812300\r\n       
+      StrokeWeight | 1\r\n        StrokeAlign | INSIDE\r\n        CornerRadius |
+      1\r\n        BlendMode | PASS_THROUGH\r\n        Size | (19.17, 19.17)\r\n       
+      isVisible | True\r\n        Type | STAR\r\n        GetFigmaRotationAngle |
+      0\r\n        FillGeometry | -1478812300\r\n        StrokeWeight | 1\r\n       
+      StrokeAlign | INSIDE\r\n        CornerRadius | 1\r\n        BlendMode | PASS_THROUGH\r\n       
+      Size | (19.17, 19.17)\r\n        \u2014\u2014\u2014\u2014Fills\r\n           
+      IsVisible | True\r\n            Type | GRADIENT_LINEAR\r\n            Color
+      | RGBA(0.000, 0.000, 0.000, 0.000)\r\n            BlendMode | NORMAL\r\n           
+      Color | RGBA(1.000, 0.813, 0.150, 1.000)\r\n            Position | 0\r\n           
+      Color | RGBA(1.000, 0.957, 0.804, 1.000)\r\n            Position | 0.1557406\r\n           
+      Color | RGBA(0.967, 0.713, 0.060, 1.000)\r\n            Position | 0.1997075\r\n           
+      Color | RGBA(0.990, 0.664, 0.364, 1.000)\r\n            Position | 0.4094813\r\n           
+      Color | RGBA(1.000, 0.858, 0.492, 1.000)\r\n            Position | 0.4305017\r\n           
+      Color | RGBA(1.000, 0.743, 0.083, 1.000)\r\n            Position | 0.6558095\r\n           
+      Color | RGBA(1.000, 0.940, 0.785, 1.000)\r\n            Position | 0.8344953\r\n           
+      Color | RGBA(1.000, 0.576, 0.079, 1.000)\r\n            Position | 1\r\n           
+      GradientHandlePositions | (0.50, 0.14) (-0.33, 1.46) (-0.16, -0.28)\r\n       
+      \u2014\u2014\u2014\u2014Strokes\r\n            IsVisible | True\r\n           
+      Type | GRADIENT_LINEAR\r\n            Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n           
+      BlendMode | NORMAL\r\n            Color | RGBA(1.000, 0.999, 0.994, 1.000)\r\n           
+      Position | 0.1326478\r\n            Color | RGBA(1.000, 0.813, 0.152, 1.000)\r\n           
+      Position | 0.2784693\r\n            Color | RGBA(1.000, 0.929, 0.678, 1.000)\r\n           
+      Position | 0.5891685\r\n            Color | RGBA(1.000, 0.749, 0.102, 1.000)\r\n           
+      Position | 0.8415442\r\n            GradientHandlePositions | (0.78, 0.86)
+      (0.31, 0.22) (1.10, 0.63)\r\n        \u2014\u2014\u2014\u2014ArcData\r\n           
+      StartingAngle | 0\r\n            EndingAngle | 0\r\n            InnerRadius
+      | 0\r\n        \u2014\u2014\u2014\u2014Frame 34/Group 10/Group 9/Rectangle
+      82\r\n            isVisible | True\r\n            Type | RECTANGLE\r\n           
+      GetFigmaRotationAngle | 90\r\n            FillGeometry | 1825117323\r\n           
+      StrokeWeight | 1\r\n            StrokeAlign | INSIDE\r\n            BlendMode
+      | PASS_THROUGH\r\n            Size | (21.30, 1.07)\r\n            isVisible
+      | True\r\n            Type | RECTANGLE\r\n            GetFigmaRotationAngle
+      | 90\r\n            FillGeometry | 1825117323\r\n            StrokeWeight |
+      1\r\n            StrokeAlign | INSIDE\r\n            BlendMode | PASS_THROUGH\r\n           
+      Size | (21.30, 1.07)\r\n            \u2014\u2014\u2014\u2014Fills\r\n               
+      IsVisible | True\r\n                Type | GRADIENT_LINEAR\r\n               
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n                BlendMode | NORMAL\r\n               
+      Color | RGBA(1.000, 1.000, 0.996, 1.000)\r\n                Position | 0.1109154\r\n               
+      Color | RGBA(1.000, 0.749, 0.102, 1.000)\r\n                Position | 0.3206001\r\n               
+      Color | RGBA(0.255, 0.494, 0.141, 1.000)\r\n                Position | 0.6885278\r\n               
+      Color | RGBA(0.420, 0.686, 0.298, 1.000)\r\n                Position | 0.9803461\r\n               
+      GradientHandlePositions | (0.97, 1.00) (0.03, 1.00) (0.97, -478.05)\r\n           
+      \u2014\u2014\u2014\u2014ArcData\r\n                StartingAngle | 0\r\n               
+      EndingAngle | 0\r\n                InnerRadius | 0\r\n            \u2014\u2014\u2014\u2014Frame
+      34/Group 10/Group 9/Rectangle 83\r\n                isVisible | True\r\n               
+      Type | RECTANGLE\r\n                GetFigmaRotationAngle | 53.83335\r\n               
+      FillGeometry | -285827317\r\n                StrokeWeight | 1\r\n               
+      StrokeAlign | INSIDE\r\n                BlendMode | PASS_THROUGH\r\n               
+      Size | (20.68, 1.07)\r\n                isVisible | True\r\n               
+      Type | RECTANGLE\r\n                GetFigmaRotationAngle | 53.83335\r\n               
+      FillGeometry | -285827317\r\n                StrokeWeight | 1\r\n               
+      StrokeAlign | INSIDE\r\n                BlendMode | PASS_THROUGH\r\n               
+      Size | (20.68, 1.07)\r\n                \u2014\u2014\u2014\u2014Fills\r\n                   
+      IsVisible | True\r\n                    Type | GRADIENT_LINEAR\r\n                   
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n                    BlendMode |
+      NORMAL\r\n                    Color | RGBA(1.000, 0.584, 0.584, 1.000)\r\n                   
+      Position | 0.02390721\r\n                    Color | RGBA(0.980, 0.929, 0.929,
+      1.000)\r\n                    Position | 0.1927761\r\n                    Color
+      | RGBA(1.000, 0.863, 0.373, 1.000)\r\n                    Position | 0.6905791\r\n                   
+      Color | RGBA(1.000, 0.875, 0.498, 1.000)\r\n                    Position |
+      0.8738002\r\n                    GradientHandlePositions | (0.97, 1.00) (0.03,
+      1.00) (0.97, -478.05)\r\n                \u2014\u2014\u2014\u2014ArcData\r\n                   
+      StartingAngle | 0\r\n                    EndingAngle | 0\r\n                   
+      InnerRadius | 0\r\n                \u2014\u2014\u2014\u2014Frame 34/Group 10/Group
+      9/Rectangle 84\r\n                    isVisible | True\r\n                   
+      Type | RECTANGLE\r\n                    GetFigmaRotationAngle | -17.90739\r\n                   
+      FillGeometry | -444530837\r\n                    StrokeWeight | 1\r\n                   
+      StrokeAlign | INSIDE\r\n                    BlendMode | PASS_THROUGH\r\n                   
+      Size | (21.04, 1.07)\r\n                    isVisible | True\r\n                   
+      Type | RECTANGLE\r\n                    GetFigmaRotationAngle | -17.90739\r\n                   
+      FillGeometry | -444530837\r\n                    StrokeWeight | 1\r\n                   
+      StrokeAlign | INSIDE\r\n                    BlendMode | PASS_THROUGH\r\n                   
+      Size | (21.04, 1.07)\r\n                    \u2014\u2014\u2014\u2014Fills\r\n                       
+      IsVisible | True\r\n                        Type | GRADIENT_LINEAR\r\n                       
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n                        BlendMode
+      | NORMAL\r\n                        Color | RGBA(1.000, 0.584, 0.584, 1.000)\r\n                       
+      Position | 0.02390721\r\n                        Color | RGBA(0.980, 0.929,
+      0.929, 1.000)\r\n                        Position | 0.1927761\r\n                       
+      Color | RGBA(1.000, 0.749, 0.102, 1.000)\r\n                        Position
+      | 0.6741935\r\n                        Color | RGBA(1.000, 0.996, 0.976, 1.000)\r\n                       
+      Position | 0.8907834\r\n                        GradientHandlePositions | (0.97,
+      1.00) (0.03, 1.00) (0.97, -478.05)\r\n                    \u2014\u2014\u2014\u2014ArcData\r\n                       
+      StartingAngle | 0\r\n                        EndingAngle | 0\r\n                       
+      InnerRadius | 0\r\n                    \u2014\u2014\u2014\u2014Frame 34/Group
+      10/Group 9/Rectangle 85\r\n                        isVisible | True\r\n                       
+      Type | RECTANGLE\r\n                        GetFigmaRotationAngle | -161.8143\r\n                       
+      FillGeometry | 701019659\r\n                        StrokeWeight | 1\r\n                       
+      StrokeAlign | INSIDE\r\n                        BlendMode | PASS_THROUGH\r\n                       
+      Size | (20.27, 1.07)\r\n                        isVisible | True\r\n                       
+      Type | RECTANGLE\r\n                        GetFigmaRotationAngle | -161.8143\r\n                       
+      FillGeometry | 701019659\r\n                        StrokeWeight | 1\r\n                       
+      StrokeAlign | INSIDE\r\n                        BlendMode | PASS_THROUGH\r\n                       
+      Size | (20.27, 1.07)\r\n                        \u2014\u2014\u2014\u2014Fills\r\n                           
+      IsVisible | True\r\n                            Type | GRADIENT_LINEAR\r\n                           
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n                            BlendMode
+      | NORMAL\r\n                            Color | RGBA(1.000, 0.584, 0.584, 1.000)\r\n                           
+      Position | 0.02390721\r\n                            Color | RGBA(0.980, 0.929,
+      0.929, 1.000)\r\n                            Position | 0.1927761\r\n                           
+      Color | RGBA(1.000, 0.859, 0.357, 1.000)\r\n                            Position
+      | 0.6879937\r\n                            Color | RGBA(1.000, 0.902, 0.588,
+      1.000)\r\n                            Position | 0.8875841\r\n                           
+      GradientHandlePositions | (0.97, 1.00) (0.03, 1.00) (0.97, -478.05)\r\n                       
+      \u2014\u2014\u2014\u2014ArcData\r\n                            StartingAngle
+      | 0\r\n                            EndingAngle | 0\r\n                           
+      InnerRadius | 0\r\n                        \u2014\u2014\u2014\u2014Frame 34/Group
+      10/Group 9/Rectangle 86\r\n                            isVisible | True\r\n                           
+      Type | RECTANGLE\r\n                            GetFigmaRotationAngle | 126.0078\r\n                           
+      FillGeometry | -1957392469\r\n                            StrokeWeight | 1\r\n                           
+      StrokeAlign | INSIDE\r\n                            BlendMode | PASS_THROUGH\r\n                           
+      Size | (20.97, 1.07)\r\n                            isVisible | True\r\n                           
+      Type | RECTANGLE\r\n                            GetFigmaRotationAngle | 126.0078\r\n                           
+      FillGeometry | -1957392469\r\n                            StrokeWeight | 1\r\n                           
+      StrokeAlign | INSIDE\r\n                            BlendMode | PASS_THROUGH\r\n                           
+      Size | (20.97, 1.07)\r\n                            \u2014\u2014\u2014\u2014Fills\r\n                               
+      IsVisible | True\r\n                                Type | GRADIENT_LINEAR\r\n                               
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n                               
+      BlendMode | NORMAL\r\n                                Color | RGBA(1.000, 0.584,
+      0.584, 1.000)\r\n                                Position | 0.02390721\r\n                               
+      Color | RGBA(0.980, 0.929, 0.929, 1.000)\r\n                               
+      Position | 0.1927761\r\n                                Color | RGBA(1.000,
+      1.000, 1.000, 1.000)\r\n                                Position | 0.6834739\r\n                               
+      Color | RGBA(1.000, 0.827, 0.255, 1.000)\r\n                               
+      Position | 0.8958551\r\n                                GradientHandlePositions
+      | (0.97, 1.00) (0.03, 1.00) (0.97, -478.05)\r\n                           
+      \u2014\u2014\u2014\u2014ArcData\r\n                                StartingAngle
+      | 0\r\n                                EndingAngle | 0\r\n                               
+      InnerRadius | 0\r\n                            \u2014\u2014\u2014\u2014Frame
+      34/Group 10/Group 9/Star 4\r\n                                isVisible | True\r\n                               
+      Type | STAR\r\n                                GetFigmaRotationAngle | 0\r\n                               
+      FillGeometry | 1349080789\r\n                                StrokeWeight |
+      1\r\n                                StrokeAlign | INSIDE\r\n                               
+      CornerRadius | 1\r\n                                BlendMode | PASS_THROUGH\r\n                               
+      Size | (31.95, 31.95)\r\n                                isVisible | True\r\n                               
+      Type | STAR\r\n                                GetFigmaRotationAngle | 0\r\n                               
+      FillGeometry | 1349080789\r\n                                StrokeWeight |
+      1\r\n                                StrokeAlign | INSIDE\r\n                               
+      CornerRadius | 1\r\n                                BlendMode | PASS_THROUGH\r\n                               
+      Size | (31.95, 31.95)\r\n                                \u2014\u2014\u2014\u2014Strokes\r\n                                   
+      IsVisible | True\r\n                                    Type | GRADIENT_LINEAR\r\n                                   
+      Color | RGBA(0.000, 0.000, 0.000, 0.000)\r\n                                   
+      BlendMode | NORMAL\r\n                                    Color | RGBA(1.000,
+      0.999, 0.994, 1.000)\r\n                                    Position | 0.1326478\r\n                                   
+      Color | RGBA(1.000, 0.813, 0.152, 1.000)\r\n                                   
+      Position | 0.2784693\r\n                                    Color | RGBA(1.000,
+      0.929, 0.678, 1.000)\r\n                                    Position | 0.5891685\r\n                                   
+      Color | RGBA(1.000, 0.749, 0.102, 1.000)\r\n                                   
+      Position | 0.8161861\r\n                                    Color | RGBA(1.000,
+      0.844, 0.292, 1.000)\r\n                                    Position | 1\r\n                                   
+      GradientHandlePositions | (0.23, 0.10) (0.77, 0.90) (-0.17, 0.37)\r\n                               
+      \u2014\u2014\u2014\u2014ArcData\r\n                                    StartingAngle
+      | 0\r\n                                    EndingAngle | 0\r\n                                   
+      InnerRadius | 0\r\n"
+    parentIndex: -1
+    hierarchy: Frame 34
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: children not empty
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!114 &4541310911149491751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629598168876108073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!1001 &8080780271019742088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6013403432695743266}
+    m_Modifications:
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 31.952637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 31.952637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773314893774602556, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+      propertyPath: m_Name
+      value: Group 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+--- !u!224 &5508325150416070296 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4347436392523740432, guid: ee1054eb03e5c314a8e6c0df185ad0b4, type: 3}
+  m_PrefabInstance: {fileID: 8080780271019742088}
+  m_PrefabAsset: {fileID: 0}

@@ -51,9 +51,9 @@ public class UIController : MonoBehaviour
         yield return new WaitForEndOfFrame();
         var tempCount = controller.ColumnCount * controller.LineCount;
         GameObject[] tempArray = new GameObject[tempCount];
+        tempArray = objectPool.GetListObject().ToArray();
         for (int i = 0; i < tempCount; i++)
         {
-            tempArray[i] = objectPool.GetObjectByType(ObjectType.MatchThreeSprite, ElementType.NoElement);
             tempArray[i].SetActive(true);
             var dragDrop = tempArray[i].GetComponentInChildren<DragDrop>();
             dragDrop.SetActionOnDragWithParams(controller.SetValuesFromBeginDragPoint);

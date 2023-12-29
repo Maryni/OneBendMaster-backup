@@ -9,16 +9,14 @@ public class GameController : MonoBehaviour
 {
 
     #region private variables
-
-    private SaveLoadController saveLoadController;
+    
     private UIController uiController;
     private MatchThreeButtons matchThreeButtons;
 
     #endregion private variables
 
     #region properties
-
-    public SaveLoadController SaveLoadController => saveLoadController;
+    
     public UIController UIController => uiController;
 
     #endregion properties
@@ -39,21 +37,11 @@ public class GameController : MonoBehaviour
     
     #region private functions
 
-    private void SetVariables()
-    {
-
-        if (saveLoadController == null)
-        {
-            saveLoadController = FindObjectOfType<SaveLoadController>();
-        }
-    }
-
     private void LoadAfterGameSceneWasLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"Scene [{scene.name}] was loaded");
         if (scene.buildIndex == 1)
         {
-
             if (uiController == null)
             {
                 uiController = FindObjectOfType<UIController>();
@@ -64,8 +52,7 @@ public class GameController : MonoBehaviour
             {
                 matchThreeButtons = FindObjectOfType<MatchThreeButtons>();
             }
-
-            SetVariables();
+            
             SetActions();
         }
     }
