@@ -116,7 +116,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         using (HttpClient clientDataServ = new HttpClient())
         {
             StringContent contentDataInfo = new StringContent(jsonDataPlinkoUser, System.Text.Encoding.UTF8, "application/json");
-
             HttpResponseMessage responseDataInfo = await clientDataServ.PostAsync(apiUrlDataInfo, contentDataInfo);
 
             if (responseDataInfo.IsSuccessStatusCode)
