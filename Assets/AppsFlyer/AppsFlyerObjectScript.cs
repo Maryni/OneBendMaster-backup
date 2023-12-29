@@ -3,9 +3,10 @@ using UnityEngine;
 using AppsFlyerSDK;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+
 using System;
-using System.Collections;
+using System.Collections; 
+using Newtonsoft.Json;
 
 
 // This class is intended to be used the the AppsFlyerObject.prefab
