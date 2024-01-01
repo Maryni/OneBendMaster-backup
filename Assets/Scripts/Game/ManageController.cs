@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ManageController : MonoBehaviour
@@ -9,6 +11,7 @@ public class ManageController : MonoBehaviour
     [SerializeField] private AppsFlyerObjectScript scriptIOS;
     [SerializeField] private UIController uiController;
     [SerializeField] private MatchThreeController_v2 controller_V2;
+    [SerializeField] private TMP_Text text;
 
     private void Start()
     {
@@ -37,5 +40,10 @@ public class ManageController : MonoBehaviour
         );
 #endif
 
+    }
+
+    private void Update()
+    {
+        text.text = scriptAndroid.resultUserData;
     }
 }

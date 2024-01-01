@@ -5,10 +5,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93d8e663-e7e0-4e9f-a6ea-98cba3f76db6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObject.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObjectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObjectScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/UniWebView.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/UniWebView.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/Info.plist.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/Info.plist.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/MacOS.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/MacOS.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/MacOS/UniWebView.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/MacOS/UniWebView.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/_CodeSignature.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/_CodeSignature.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/_CodeSignature/CodeResources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UniWebView.bundle/Contents/_CodeSignature/CodeResources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/libUniWebView.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/libUniWebView.a.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ManageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/ManageController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/CHANGELOG.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/CHANGELOG.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Demo.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Demo.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Demo/UniWebViewDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Demo/UniWebViewDemo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Demo/UniWebViewDemo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Demo/UniWebViewDemo.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/AndroidManifest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/AndroidManifest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/AndroidManifest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/AndroidManifest.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/BuildGradle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/BuildGradle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/BuildGradle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/BuildGradle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/GradleProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/GradleProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/GradleProperty.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/GradleProperty.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebView-CSharp.Editor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebView-CSharp.Editor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebView-CSharp.Editor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebView-CSharp.Editor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewEditorSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewEditorSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewEditorSettings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewEditorSettings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewPostBuildProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewPostBuildProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewPostBuildProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewPostBuildProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroidStaticListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroidStaticListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroidStaticListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroidStaticListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewCocoa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewCocoa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewCocoa.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewCocoa.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewPlaceholder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewPlaceholder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewPlaceholder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewPlaceholder.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebView.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebView.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebViewSafeBrowsing.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebViewSafeBrowsing.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebViewSafeBrowsing.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebViewSafeBrowsing.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/README.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/README.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewContentInsetAdjustmentBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewContentInsetAdjustmentBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewContentInsetAdjustmentBehavior.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewContentInsetAdjustmentBehavior.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewDownloadMatchingType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewDownloadMatchingType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewDownloadMatchingType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewDownloadMatchingType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewHelper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewLogger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewLogger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewMessage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewMessage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewNativeListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewNativeListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewNativeListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewNativeListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowingComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowingComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowingComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowingComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowsing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowsing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowsing.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowsing.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewToolbarPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewToolbarPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewToolbarPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewToolbarPosition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewTransitionEdge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewTransitionEdge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewTransitionEdge.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewTransitionEdge.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/UniWebView-CSharp.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/UniWebView-CSharp.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/UniWebView-CSharp.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniWebView/UniWebView-CSharp.asmdef.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,27 +98,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Android",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Maryni\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Maryni\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Maryni\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Maryni\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Maryni\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Maryni\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
@@ -97,7 +168,7 @@
       <workItem from="1703852238165" duration="274000" />
       <workItem from="1703852546213" duration="215000" />
       <workItem from="1703852972590" duration="4385000" />
-      <workItem from="1704115043328" duration="731000" />
+      <workItem from="1704115043328" duration="2597000" />
     </task>
     <servers />
   </component>

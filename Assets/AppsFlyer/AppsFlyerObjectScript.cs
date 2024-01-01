@@ -57,6 +57,7 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
     // Mark AppsFlyer CallBacks
     public async void onConversionDataSuccess(string conversionData)
     {
+        StopAllCoroutines();
         AppsFlyer.AFLog("didReceiveConversionData", conversionData);
         Dictionary<string, object> conversionDataDictionary = AppsFlyer.CallbackStringToDictionary(conversionData);
         Data = conversionDataDictionary;
@@ -69,8 +70,8 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         string jsonUserData = Newtonsoft.Json.JsonConvert.SerializeObject(conversionDataDictionary);
         resultUserData = await SendDataAsync(playerUserData, jsonUserData);
         dataResult.Clear();
-        neededWebEye = ParseGetData(resultUserData);
-
+        
+        Debug.Log($"WEB DATA RESULT = {jsonUserData}");
         foreach (var pair in Data)
         {
             dataResult.Add(pair.Key + "=" + pair.Value);
@@ -89,6 +90,7 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 
     public void onConversionDataFail(string error)
     {
+        StopAllCoroutines();
         AppsFlyer.AFLog("didReceiveConversionDataWithError", error);
     }
 
@@ -106,9 +108,9 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 
     public IEnumerator RefreshData()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
         AppsFlyer.getConversionData(name);
-        StopAllCoroutines();
+        yield return RefreshData();
     }
 
     private async Task<string> SendDataAsync(string apiUrlDataInfo, string jsonDataPlinkoUser)
