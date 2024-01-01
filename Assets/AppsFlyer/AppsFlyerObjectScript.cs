@@ -25,6 +25,7 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
     public bool getConversionData;
     public bool IsUserActive;
     public string resultUserData;
+    public string BigData;
 
     public Dictionary<string, object> Data = new Dictionary<string, object>();
     public List<string> dataResult = new List<string>();
@@ -50,7 +51,13 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 
         AppsFlyer.startSDK();
 
-        StartCoroutine(RefreshData());
+        GetPublicData();
+        var ttt =new Dictionary<string, object>();
+        ttt["dev_key"] = devKey;
+        ttt["app_id"] = packageName;
+        ttt["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
+        ttt["signal_app_id"] = signalAppId;
+        BigData = JsonConvert.SerializeObject(ttt);
 
     }
 
@@ -67,7 +74,7 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         conversionDataDictionary["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
         conversionDataDictionary["signal_app_id"] = signalAppId;
         string playerUserData = playerDataURL;
-        string jsonUserData = Newtonsoft.Json.JsonConvert.SerializeObject(conversionDataDictionary);
+        string jsonUserData = JsonConvert.SerializeObject(conversionDataDictionary);
         resultUserData = await SendDataAsync(playerUserData, jsonUserData);
         dataResult.Clear();
         
@@ -90,8 +97,8 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 
     public void onConversionDataFail(string error)
     {
-        StopAllCoroutines();
         AppsFlyer.AFLog("didReceiveConversionDataWithError", error);
+        StopAllCoroutines();
     }
 
     public void onAppOpenAttribution(string attributionData)
@@ -104,13 +111,19 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
     public void onAppOpenAttributionFailure(string error)
     {
         AppsFlyer.AFLog("onAppOpenAttributionFailure", error);
+        StopAllCoroutines();
     }
 
+    public void GetPublicData()
+    {
+        StartCoroutine(RefreshData());
+    }
+    
     public IEnumerator RefreshData()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7);
         AppsFlyer.getConversionData(name);
-        yield return RefreshData();
+        StopAllCoroutines();
     }
 
     private async Task<string> SendDataAsync(string apiUrlDataInfo, string jsonDataPlinkoUser)

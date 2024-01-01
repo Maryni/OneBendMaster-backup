@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   devKey: gLkCgQGZXXcRxYpRaeSYrC
-  appID: 
+  appID: 6475002886
   UWPAppID: 
   macOSAppID: 
   playerDataURL: https://perrfectsttarrttup.shop?onebendmaster-tech
@@ -55,6 +55,7 @@ MonoBehaviour:
   getConversionData: 1
   IsUserActive: 0
   resultUserData: 
+  BigData: 
   dataResult: []
   userDataResult: []
   neededWebEye: 
