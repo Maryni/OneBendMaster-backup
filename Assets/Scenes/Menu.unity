@@ -3030,7 +3030,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uniWebView: {fileID: 862421232}
-  script: {fileID: 1146101224}
+  scriptAndroid: {fileID: 1146101224}
+  scriptIOS: {fileID: 1858568747}
   uiController: {fileID: 504849358}
   controller_V2: {fileID: 1249288854}
 --- !u!114 &650239887
@@ -5591,10 +5592,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 650239884}
     m_Modifications:
-    - target: {fileID: 4405976200006927252, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6207133488976360133, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -768
@@ -5638,10 +5635,6 @@ PrefabInstance:
     - target: {fileID: 7315102894599890749, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
       propertyPath: m_Name
       value: AppsFlyerObjectAndroid
-      objectReference: {fileID: 0}
-    - target: {fileID: 7315102894599890749, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9982,6 +9975,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6170144373563204751, guid: b4d67ab9919e56440ae26b1e0efd5887, type: 3}
   m_PrefabInstance: {fileID: 1837615197}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1858568747 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4405976200006927252, guid: 0bfe3b149145747cc92dc53bb4df4e9b, type: 3}
+  m_PrefabInstance: {fileID: 253656133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2ec6ba1ee8b48749524f015ed572a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1865932018
 PrefabInstance:
   m_ObjectHideFlags: 0
