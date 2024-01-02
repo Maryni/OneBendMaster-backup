@@ -52,13 +52,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         AppsFlyer.startSDK();
 
         GetPublicData();
-        var ttt =new Dictionary<string, object>();
-        ttt["dev_key"] = devKey;
-        ttt["app_id"] = packageName;
-        ttt["appsflyer_id"] = AppsFlyer.getAppsFlyerId();
-        ttt["signal_app_id"] = signalAppId;
-        BigData = JsonConvert.SerializeObject(ttt);
-
     }
 
     // Mark AppsFlyer CallBacks
