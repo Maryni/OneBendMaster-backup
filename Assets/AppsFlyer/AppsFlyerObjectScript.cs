@@ -118,7 +118,7 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
     
     public IEnumerator RefreshData()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(3f);
         AppsFlyer.getConversionData(name);
         StopAllCoroutines();
     }
