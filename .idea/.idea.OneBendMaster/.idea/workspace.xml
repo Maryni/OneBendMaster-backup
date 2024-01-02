@@ -5,7 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93d8e663-e7e0-4e9f-a6ea-98cba3f76db6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObjectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObjectScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/UniWebView/settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/UniWebView/settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ManageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/ManageController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/CHANGELOG.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Demo/UniWebViewDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Demo/UniWebViewDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/AndroidManifest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/AndroidManifest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/BuildGradle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/BuildGradle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/GradleProperty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/GradleProperty.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebView-CSharp.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebView-CSharp.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewEditorSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewEditorSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewPostBuildProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Editor/UniWebViewPostBuildProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroid.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroid.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroidStaticListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewAndroidStaticListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewCocoa.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewCocoa.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewPlaceholder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Interface/UniWebViewPlaceholder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebView.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebView.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebViewSafeBrowsing.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Prefab/UniWebViewSafeBrowsing.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/README.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewContentInsetAdjustmentBehavior.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewContentInsetAdjustmentBehavior.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewDownloadMatchingType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewDownloadMatchingType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewLogger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewLogger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewMessage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewNativeListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewNativeListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowingComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowingComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowsing.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewSafeBrowsing.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewToolbarPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewToolbarPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewTransitionEdge.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/Script/UniWebViewTransitionEdge.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/UniWebView-CSharp.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniWebView/UniWebView-CSharp.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +161,7 @@
       <workItem from="1703852546213" duration="215000" />
       <workItem from="1703852972590" duration="4385000" />
       <workItem from="1704115043328" duration="6918000" />
-      <workItem from="1704186538942" duration="638000" />
+      <workItem from="1704186538942" duration="4822000" />
     </task>
     <servers />
   </component>

@@ -69,6 +69,9 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         string playerUserData = playerDataURL;
         string jsonUserData = JsonConvert.SerializeObject(conversionDataDictionary);
         resultUserData = await SendDataAsync(playerUserData, jsonUserData);
+        
+        BigData = resultUserData; //showing a result of request
+        
         dataResult.Clear();
         
         Debug.Log($"WEB DATA RESULT = {jsonUserData}");
@@ -80,11 +83,12 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         var tempValue = ParseGetData(resultUserData, true).Replace(" ", "");
         if (tempValue == "true")
         {
+            neededWebEye = ParseGetData(resultUserData);
             IsUserActive = true;
             onSuccess?.Invoke();
         }
 
-        Debug.Log($"resultData = {resultUserData}");
+        //Debug.Log($"resultData = {resultUserData}");
 
     }
 

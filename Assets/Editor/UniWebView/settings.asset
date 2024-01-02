@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: settings
   m_EditorClassIdentifier: 
   usesCleartextTraffic: 1
-  writeExternalStorage: 1
+  writeExternalStorage: 0
   accessFineLocation: 1
   addsKotlin: 1
   addsAndroidBrowser: 1
