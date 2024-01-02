@@ -27,32 +27,6 @@ public class ManageController : MonoBehaviour
             () => controller_V2.Text.text = controller_V2.GameScore.ToString()
         );
     }
-
-    private void ShowDefaultUrlFullScreen()
-    {
-        GpmWebView.ShowUrl(
-            "https://google.com/",
-            new GpmWebViewRequest.Configuration()
-            {
-                style = GpmWebViewStyle.FULLSCREEN,
-                orientation = GpmOrientation.UNSPECIFIED,
-                isClearCookie = true,
-                isClearCache = true,
-                isNavigationBarVisible = false,
-                isCloseButtonVisible = false,
-                supportMultipleWindows = false,
-#if UNITY_IOS
-            contentMode = GpmWebViewContentMode.MOBILE,
-            isMaskViewVisible = true,
-#endif
-            },
-            // See the end of the code example
-            OnCallback,
-            new List<string>()
-            {
-                "USER_ CUSTOM_SCHEME"
-            });
-    }
     
     public void ShowUrlFullScreen(string url)
     {
@@ -80,95 +54,6 @@ public class ManageController : MonoBehaviour
         {
             "USER_ CUSTOM_SCHEME"
         });
-}
-
-// Popup default
-public void ShowUrlPopupDefault(string url)
-{
-    GpmWebView.ShowUrl(
-        url,
-        new GpmWebViewRequest.Configuration()
-        {
-            style = GpmWebViewStyle.POPUP,
-            orientation = GpmOrientation.UNSPECIFIED,
-            isClearCookie = true,
-            isClearCache = true,
-            isNavigationBarVisible = false,
-            isCloseButtonVisible = false,
-            supportMultipleWindows = false,
-#if UNITY_IOS
-            contentMode = GpmWebViewContentMode.MOBILE,
-            isMaskViewVisible = true,
-#endif
-        },
-        // See the end of the code example
-        OnCallback,
-        new List<string>()
-        {
-            "USER_ CUSTOM_SCHEME"
-        });
-}
-
-// Popup custom position and size
-public void ShowUrlPopupPositionSize(string url)
-{
-    GpmWebView.ShowUrl(
-        url,
-        new GpmWebViewRequest.Configuration()
-        {
-            style = GpmWebViewStyle.POPUP,
-            orientation = GpmOrientation.UNSPECIFIED,
-            isClearCookie = true,
-            isClearCache = true,
-            isNavigationBarVisible = false,
-            isCloseButtonVisible = false,
-            position = new GpmWebViewRequest.Position
-            {
-                hasValue = true,
-                x = (int)(Screen.width * 0.1f),
-                y = (int)(Screen.height * 0.1f)
-            },
-            size = new GpmWebViewRequest.Size
-            {
-                hasValue = true,
-                width = (int)(Screen.width * 0.8f),
-                height = (int)(Screen.height * 0.8f)
-            },
-            supportMultipleWindows = false,
-#if UNITY_IOS
-            contentMode = GpmWebViewContentMode.MOBILE,
-            isMaskViewVisible = true,
-#endif
-        }, null, null);
-}
-
-// Popup custom margins
-public void ShowUrlPopupMargins(string url)
-{
-    GpmWebView.ShowUrl(
-        url,
-        new GpmWebViewRequest.Configuration()
-        {
-            style = GpmWebViewStyle.POPUP,
-            orientation = GpmOrientation.UNSPECIFIED,
-            isClearCookie = true,
-            isClearCache = true,
-            isNavigationBarVisible = false,
-            isCloseButtonVisible = false,
-            margins = new GpmWebViewRequest.Margins
-            {
-                hasValue = true,
-                left = (int)(Screen.width * 0.1f),
-                top = (int)(Screen.height * 0.1f),
-                right = (int)(Screen.width * 0.1f),
-                bottom = (int)(Screen.height * 0.1f)
-            },
-            supportMultipleWindows = false,
-#if UNITY_IOS
-            contentMode = GpmWebViewContentMode.MOBILE,
-            isMaskViewVisible = true,
-#endif
-        }, null, null);
 }
 
 private void OnCallback(
