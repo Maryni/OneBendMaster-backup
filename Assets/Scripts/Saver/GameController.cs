@@ -10,10 +10,10 @@ public class GameController : MonoBehaviour
 
     #region private variables
     
-    private UIController uiController;
-    private MatchThreeButtons matchThreeButtons;
-    private MatchThreeController_v2 matchThreeControllerV2;
-    private UpgradeController upgradeController;
+    [SerializeField] private UIController uiController;
+    [SerializeField] private MatchThreeButtons matchThreeButtons;
+    [SerializeField] private MatchThreeController_v2 matchThreeControllerV2;
+    [SerializeField] private UpgradeController upgradeController;
 
     #endregion private variables
 
@@ -35,6 +35,11 @@ public class GameController : MonoBehaviour
         SceneManager.sceneLoaded -= LoadAfterGameSceneWasLoaded;
     }
 
+    private void Start()
+    {
+        SetActions();
+    }
+
     #endregion Unity functions
     
     #region private functions
@@ -44,28 +49,7 @@ public class GameController : MonoBehaviour
         Debug.Log($"Scene [{scene.name}] was loaded");
         if (scene.buildIndex == 1)
         {
-            if (uiController == null)
-            {
-                uiController = FindObjectOfType<UIController>();
-                uiController.SetGameController(this);
-            }
-
-            if (matchThreeButtons == null)
-            {
-                matchThreeButtons = FindObjectOfType<MatchThreeButtons>();
-            }
-
-            if (upgradeController == null)
-            {
-                upgradeController = FindObjectOfType<UpgradeController>();
-            }
-
-            if (matchThreeControllerV2 == null)
-            {
-                matchThreeControllerV2 = FindObjectOfType<MatchThreeController_v2>();
-            }
-            
-            SetActions();
+            //SetActions();
         }
     }
     /// <summary>

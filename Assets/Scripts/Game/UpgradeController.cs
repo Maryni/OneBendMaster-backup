@@ -31,6 +31,6 @@ public class UpgradeController : MonoBehaviour
         scoreByTimerToggle.onValueChanged.AddListener(AutoScoreCallback);
     }
 
-    private void DoubleScoreCallback(bool value) => scoreByTimerToggleAction?.Invoke(value);
+    private void DoubleScoreCallback(bool value) => doubleScoreToggleAction?.Invoke(value);
     private void AutoScoreCallback(bool value) => scoreByTimerToggleAction?.Invoke(value);
 }
