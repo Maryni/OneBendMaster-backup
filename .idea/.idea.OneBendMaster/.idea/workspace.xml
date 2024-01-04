@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93d8e663-e7e0-4e9f-a6ea-98cba3f76db6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/projectSettingsUpdater.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OneBendMaster/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObjectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AppsFlyer/AppsFlyerObjectScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ManageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/ManageController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MatchThree/MatchThreeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MatchThree/MatchThreeController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DragDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DragDrop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIActions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview-2020.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview-2020/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview-2020/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview-2020/unity-webview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview-2020/unity-webview.js.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview/unity-webview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLTemplates/unity-webview/unity-webview.js.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview/thumbnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview/thumbnail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview/unity-webview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebPlayerTemplates/unity-webview/unity-webview.js.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MatchThree/MatchThreeController_v2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/MatchThree/MatchThreeController_v2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saver/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saver/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +22,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/UpgradeController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -129,7 +107,7 @@
       <workItem from="1704186538942" duration="5711000" />
       <workItem from="1704216203389" duration="639000" />
       <workItem from="1704287993303" duration="80000" />
-      <workItem from="1704375678025" duration="3861000" />
+      <workItem from="1704375678025" duration="8630000" />
     </task>
     <servers />
   </component>

@@ -24,6 +24,7 @@ public class MatchThreeController_v2 : MonoBehaviour
     [SerializeField] private int countConnectedCells;
     [SerializeField] private ElementType elementTypeLastConnections = ElementType.NoElement;
     [SerializeField] private List<MatchThreeFlexibleElement> arrayObjectsSelected;
+    [SerializeField] private float timerValue;
 
     #endregion Inspector variables
 
@@ -36,6 +37,8 @@ public class MatchThreeController_v2 : MonoBehaviour
     private int yFirst = -1, ySecond = -1;
     private int gameScore = 0;
     private Action onCombinationSuccess;
+    private int gameScoreMod = 1;
+    private Coroutine autoScoreCoroutine;
 
     #endregion private variables
 
@@ -61,7 +64,29 @@ public class MatchThreeController_v2 : MonoBehaviour
     #endregion Unity functions
 
     #region public functions
+
+    public void ChangeAutoScoreState()
+    {
+        if (autoScoreCoroutine == null)
+        {
+            autoScoreCoroutine = StartCoroutine(AutoScore());
+        }
+        else
+        {
+            StopCoroutine(autoScoreCoroutine);
+            autoScoreCoroutine = null;
+        }
+    }
+
+    private IEnumerator AutoScore()
+    {
+        yield return new WaitForSeconds(timerValue);
+        IncreaseGameScore();
+        yield return AutoScore();
+    }
     
+    public void ChangeDoubleScoreState(bool value) => gameScoreMod = value ? 2 : 1;
+
     public void CheckSlideConnectionBetweenOnBeginDragAndOnEndDrag()
     {
         Debug.Log($"xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
@@ -72,7 +97,7 @@ public class MatchThreeController_v2 : MonoBehaviour
 
             if (CheckCombinationForElement(xSecond, ySecond))
             {
-                gameScore++;
+                IncreaseGameScore();
                 ChangeSelectedElements();
                 arrayObjectsSelected.Clear();
                 onCombinationSuccess?.Invoke();
@@ -183,6 +208,8 @@ public class MatchThreeController_v2 : MonoBehaviour
 
     #region private functions
 
+    private void IncreaseGameScore() => gameScore += gameScoreMod;
+    
     private bool CheckCombinationForElement(int x, int y)
     {
         Debug.Log($"Checking [{x}|{y}], elementType = {arrayObjectsInCell[x,y].ElementType}");

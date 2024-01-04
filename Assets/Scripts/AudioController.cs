@@ -2,15 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class AudioController : MonoBehaviour
 {
+    #region Inspector variables
+
     [SerializeField] private List<AudioSource> soundSources = new List<AudioSource>(); //for every sound
     [SerializeField] private List<AudioSource> musicSources = new List<AudioSource>(); //for background music
 
+    #endregion Inspector variables
+
+    #region private variables
+
     private bool mutedAudio;
     private bool mutedMusic;
+
+    #endregion private variables
 
     private void Start()
     {
@@ -21,6 +28,8 @@ public class AudioController : MonoBehaviour
     {
         
     }
+
+    #region public functions
 
     public void ChangeSoundState()
     {
@@ -59,4 +68,6 @@ public class AudioController : MonoBehaviour
         }
         mutedMusic = !mutedMusic;
     }
+
+    #endregion public functions
 }

@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     
     private UIController uiController;
     private MatchThreeButtons matchThreeButtons;
+    private MatchThreeController_v2 matchThreeControllerV2;
+    private UpgradeController upgradeController;
 
     #endregion private variables
 
@@ -52,6 +54,16 @@ public class GameController : MonoBehaviour
             {
                 matchThreeButtons = FindObjectOfType<MatchThreeButtons>();
             }
+
+            if (upgradeController == null)
+            {
+                upgradeController = FindObjectOfType<UpgradeController>();
+            }
+
+            if (matchThreeControllerV2 == null)
+            {
+                matchThreeControllerV2 = FindObjectOfType<MatchThreeController_v2>();
+            }
             
             SetActions();
         }
@@ -63,6 +75,9 @@ public class GameController : MonoBehaviour
     {
         matchThreeButtons.ButtonClosePanel.GetComponent<Button>().onClick.AddListener(() => uiController.ChangeVisibleState(matchThreeButtons.ButtonClosePanel));
         matchThreeButtons.ButtonOpenPanel.GetComponent<Button>().onClick.AddListener(() => uiController.ChangeVisibleState(matchThreeButtons.ButtonOpenPanel));
+        
+        upgradeController.SetActionsToDoubleScore((bool value) => matchThreeControllerV2.ChangeDoubleScoreState(true));
+        upgradeController.SetActionsToAutoScore((bool value) => matchThreeControllerV2.ChangeAutoScoreState());
     }
 
     #endregion private functions
