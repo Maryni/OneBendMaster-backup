@@ -3,13 +3,9 @@ using UnityEngine;
 using AppsFlyerSDK;
 using System.Net.Http;
 using System.Threading.Tasks;
-
 using System;
 using System.Collections; 
 using Newtonsoft.Json;
-
-
-// This class is intended to be used the the AppsFlyerObject.prefab
 
 public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 {
@@ -35,8 +31,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 
     void Start()
     {
-        // These fields are set from the editor so do not modify!
-        //******************************//
         AppsFlyer.setIsDebug(isDebug);
 #if UNITY_WSA_10_0 && !UNITY_EDITOR
         AppsFlyer.initSDK(devKey, UWPAppID, getConversionData ? this : null);
@@ -47,8 +41,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
 #elif UNITY_IOS
         AppsFlyer.initSDK(devKey, appID, getConversionData ? this : null);
 #endif
-        //******************************/
-
         AppsFlyer.startSDK();
 
         GetPublicData();
@@ -71,7 +63,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         resultUserData = await SendDataAsync(playerUserData, jsonUserData);
         
         BigData = resultUserData; //showing a result of request
-        
         dataResult.Clear();
         
         Debug.Log($"WEB DATA RESULT = {jsonUserData}");
@@ -87,9 +78,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
             IsUserActive = true;
             onSuccess?.Invoke();
         }
-
-        //Debug.Log($"resultData = {resultUserData}");
-
     }
 
     public void onConversionDataFail(string error)
@@ -102,7 +90,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
     {
         AppsFlyer.AFLog("onAppOpenAttribution", attributionData);
         Dictionary<string, object> attributionDataDictionary = AppsFlyer.CallbackStringToDictionary(attributionData);
-        // add direct deeplink logic here
     }
 
     public void onAppOpenAttributionFailure(string error)
@@ -152,7 +139,6 @@ public class AppsFlyerObjectScript : MonoBehaviour, IAppsFlyerConversionData
         {
             return answer.status;
         }
-
         return answer.answer.Substring(0, index);
     }
 

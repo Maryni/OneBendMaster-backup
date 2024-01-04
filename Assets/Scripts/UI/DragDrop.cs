@@ -32,18 +32,16 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
                 int x = eventData.pointerCurrentRaycast.gameObject.GetComponent<MatchThreeFlexibleElement>().X;
                 int y = eventData.pointerCurrentRaycast.gameObject.GetComponent<MatchThreeFlexibleElement>().Y;
                 actionOnDragRemoveConnection?.Invoke(x,y);
-                //actionOnEndDrag?.Invoke(x,y); //second point
-                //actionOnDragWithParams(x,y); // first point
                 if (x != lastX || y != lastY)
                 {
                     actionOnEndDrag?.Invoke(x,y);
                     actionCheckConnection?.Invoke();
                     lastX = x;
                     lastY = y;
-                    Debug.Log($"[OnDrag] second point X = {lastX} | Y = {lastY}");
-                    Debug.Log($"[OnDrag] CheckConnection Invoked");
+                    //Debug.Log($"[OnDrag] second point X = {lastX} | Y = {lastY}");
+                    //Debug.Log($"[OnDrag] CheckConnection Invoked");
                 }
-                Debug.Log($"[OnDrag] X ={x} | Y = {y}" );
+                //Debug.Log($"[OnDrag] X ={x} | Y = {y}" );
             }
         }
     }
@@ -69,7 +67,6 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         {
             Debug.Log("wrong gameobject");
         }
-
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -122,7 +119,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         }
     }
 
-    public void SetActionOnDragRemoveConenction(params UnityAction<int,int>[] actions)
+    public void SetActionOnDragRemoveConnection(params UnityAction<int,int>[] actions)
     {
         for (int i = 0; i < actions.Length; i++)
         {
@@ -131,8 +128,4 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     }
     
     #endregion public functions
-
-    #region private functions
-
-    #endregion private functions
 }

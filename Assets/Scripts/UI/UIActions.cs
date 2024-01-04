@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class UIActions : MonoBehaviour
 {
-
     #region Inspector variables
 
     [SerializeField] private GameObject continueGameObject;
@@ -17,7 +16,6 @@ public class UIActions : MonoBehaviour
     [SerializeField] private GameObject MatchThreePanel;
 
     #endregion Inspector variables
-    
     
     #region public functions
 
@@ -83,6 +81,4 @@ public class UIActions : MonoBehaviour
     }
     
     #endregion public functions
-
-
 }
