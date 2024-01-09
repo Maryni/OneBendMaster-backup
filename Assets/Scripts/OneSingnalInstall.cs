@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using OneSignalSDK;
 using UnityEngine;
 
@@ -11,5 +9,4 @@ public class OneSingnalInstall : MonoBehaviour
     {
         OneSignal.Initialize(appId);
     }
-    
 }

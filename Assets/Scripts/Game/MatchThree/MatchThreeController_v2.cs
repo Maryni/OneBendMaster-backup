@@ -89,7 +89,7 @@ public class MatchThreeController_v2 : MonoBehaviour
 
     public void CheckSlideConnectionBetweenOnBeginDragAndOnEndDrag()
     {
-        Debug.Log($"xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
+        //Debug.Log($"xFirst = {xFirst} | yFirst = {yFirst} | xSecond = {xSecond} | ySecond = {ySecond}");
         if ((xFirst != -1 && yFirst != -1) && (xSecond != -1 && ySecond != -1))
         {
             SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, true);
@@ -107,7 +107,7 @@ public class MatchThreeController_v2 : MonoBehaviour
             {
                 SwapValues(ref xSecond, ref ySecond, ref xFirst, ref yFirst, true);
                 ChangeElementsInArray();
-                Debug.Log("FALSE check combinations");
+                //Debug.Log("FALSE check combinations");
             }
         }
 
@@ -155,7 +155,7 @@ public class MatchThreeController_v2 : MonoBehaviour
 
     public void HidePanel()
     {
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -212,7 +212,7 @@ public class MatchThreeController_v2 : MonoBehaviour
     
     private bool CheckCombinationForElement(int x, int y)
     {
-        Debug.Log($"Checking [{x}|{y}], elementType = {arrayObjectsInCell[x,y].ElementType}");
+        //Debug.Log($"Checking [{x}|{y}], elementType = {arrayObjectsInCell[x,y].ElementType}");
         var maxIndexX = lineCount -1;
         var maxIndexY = columnCount -1;
 
@@ -237,7 +237,7 @@ public class MatchThreeController_v2 : MonoBehaviour
         } 
         else
         {
-            Debug.Log($"YEP, u have columnCount [{columnValue}]");
+            //Debug.Log($"YEP, u have columnCount [{columnValue}]");
             return true;
         }
         
@@ -256,7 +256,7 @@ public class MatchThreeController_v2 : MonoBehaviour
         }
         else
         {
-            Debug.Log($"YEP, u have lineCount [{lineValue}]");
+            //Debug.Log($"YEP, u have lineCount [{lineValue}]");
             return true;
         }
         
